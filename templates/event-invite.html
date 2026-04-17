@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event invite template · Vital City</title>
+
+<!--
+  Event invite template
+  ---------------------
+  Pattern: Chartreuse flood background · serif display headline · Halyard Light dek ·
+  two (or more) B&W portraits with a thin 1px black border, side by side ·
+  supporting body copy in Halyard Book with **bold** names ·
+  white co-brand footer bar with VITAL CITY wordmark, vertical rules, partner logos.
+
+  Designed to export as 2000×1000 or 1200×600 social / email hero.
+-->
+
+<link rel="stylesheet" href="https://use.typekit.net/qqk2vto.css">
+<link rel="stylesheet" href="../tokens/tokens.css">
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../components/components.css">
+
+<style>
+  body { margin: 0; background: #e9ebe3; padding: 32px; }
+
+  .invite {
+    background: var(--vc-chartreuse);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .invite__body {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: var(--vc-space-7);
+    padding: var(--vc-space-8) var(--vc-space-8) var(--vc-space-7);
+    align-items: start;
+  }
+
+  .invite__title {
+    font-family: var(--vc-font-serif);
+    font-weight: var(--vc-weight-light);
+    font-size: clamp(2.25rem, 4.2vw, 3.5rem);
+    line-height: 1.05;
+    color: var(--vc-black);
+    margin: 0 0 var(--vc-space-5);
+    /* Curly quotes in display type are correct per brand typography */
+    hyphens: none;
+  }
+
+  .invite__dek {
+    font-family: var(--vc-font-sans);
+    font-weight: var(--vc-weight-light);
+    font-size: 1.125rem;
+    line-height: 1.35;
+    color: var(--vc-black);
+    max-width: 28ch;
+    margin: 0;
+  }
+
+  .invite__portraits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--vc-space-4);
+  }
+  .invite__portrait {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    filter: grayscale(1);
+    border: 1px solid var(--vc-black);
+  }
+
+  .invite__caption {
+    grid-column: 2;
+    margin-top: var(--vc-space-4);
+    font-family: var(--vc-font-sans);
+    font-weight: var(--vc-weight-book);
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--vc-black);
+  }
+  .invite__caption strong { font-weight: var(--vc-weight-bold); }
+
+  /* Co-brand bar */
+  .invite__cobrand {
+    background: var(--vc-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--vc-space-6);
+    padding: var(--vc-space-4) var(--vc-space-5);
+  }
+  .invite__cobrand img {
+    height: 36px;
+    width: auto;
+  }
+  .invite__cobrand .vc-rule-v {
+    width: 1px;
+    height: 32px;
+    background: var(--vc-charcoal-50);
+  }
+  .invite__cobrand .partner {
+    font-family: var(--vc-font-sans);
+    font-weight: var(--vc-weight-black);
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    color: var(--vc-black);
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--vc-space-2);
+  }
+  .partner__mark {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: #57068c;      /* NYU violet — example partner color */
+    border-radius: 3px;
+  }
+
+  @media (max-width: 720px) {
+    .invite__body { grid-template-columns: 1fr; padding: var(--vc-space-6); }
+    .invite__caption { grid-column: 1; }
+  }
+</style>
+</head>
+<body>
+
+<article class="invite">
+  <div class="invite__body">
+    <div>
+      <h1 class="invite__title">Does When We&rsquo;re Born Make Us Who We Are?</h1>
+      <p class="invite__dek">A new way of thinking about crime and success in America</p>
+    </div>
+    <div>
+      <div class="invite__portraits">
+        <img class="invite__portrait" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop&auto=format" alt="Speaker 1 portrait">
+        <img class="invite__portrait" src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=600&h=600&fit=crop&auto=format" alt="Speaker 2 portrait">
+      </div>
+      <p class="invite__caption">
+        The New Yorker&rsquo;s <strong>Adam Gopnik</strong> interviews legendary Harvard sociologist <strong>Robert J. Sampson</strong> on his new book, &ldquo;Marked by Time&rdquo;
+      </p>
+    </div>
+  </div>
+
+  <div class="invite__cobrand">
+    <img src="../assets/vc-logo-black.png" alt="Vital City">
+    <span class="vc-rule-v" aria-hidden="true"></span>
+    <span class="partner"><span class="partner__mark"></span>NYU | WAGNER</span>
+    <span class="vc-rule-v" aria-hidden="true"></span>
+    <span class="partner" style="font-family: var(--vc-font-serif); font-weight: var(--vc-weight-book); letter-spacing: 0.06em; font-size: 0.82rem; line-height: 1.1;">
+      RUSSELL SAGE<br>FOUNDATION
+    </span>
+  </div>
+</article>
+
+<!-- Template notes -->
+<section style="max-width: 1200px; margin: 40px auto 0; font-family: var(--vc-font-sans); font-size: 0.95rem; color: var(--vc-charcoal);">
+  <h2 style="font-family: var(--vc-font-sans); font-weight: 900; color: var(--vc-black); font-size: 1.15rem; margin: 0 0 12px;">Template notes</h2>
+  <ul style="padding-left: 1.1rem; line-height: 1.55;">
+    <li><strong>Background:</strong> Chartreuse flood (<code>#dde44c</code>). Use for events and short-form pieces only — do not flood articles or dashboards.</li>
+    <li><strong>Headline:</strong> Gascogne Light, title case, curly quotes (<code>&amp;rsquo;</code>, <code>&amp;ldquo;</code>/<code>&amp;rdquo;</code>).</li>
+    <li><strong>Dek:</strong> Halyard Light, sentence case, no final punctuation unless a complete sentence.</li>
+    <li><strong>Portraits:</strong> Black-and-white, 1:1 aspect, 1px black border. Keep faces at similar scale.</li>
+    <li><strong>Caption:</strong> Halyard Book, names bold. "The New Yorker&rsquo;s [Name] interviews [credential] [Name] on his new book, &ldquo;Title&rdquo;" — curly quotes inside.</li>
+    <li><strong>Co-brand bar:</strong> White background. VITAL CITY wordmark first (black), then a thin vertical rule, then each partner. Partner marks at same visual weight.</li>
+    <li><strong>Export sizes:</strong> 2000×1000 (email hero), 1200×600 (social), 1600×2000 (Instagram story).</li>
+  </ul>
+</section>
+
+</body>
+</html>
