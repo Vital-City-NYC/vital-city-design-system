@@ -1,0 +1,21 @@
+Vital City Design System
+© 2024-2026 Vital City.
+
+This repository contains Vital City's design tokens, components and editorial
+guidance. The CSS, HTML and JSON files in this repository are released for
+Vital City's own use and for reference by contributors, partners and academic
+researchers.
+
+Third-party typefaces referenced here — Halyard Text (Darden Studio), Gascogne
+(TypeShop Collection) and Bayard (Vocal Type) — are licensed separately and
+are NOT redistributed by this repository. The GascogneTS-Light.ttf file
+included in fonts/ is bundled under Vital City's existing license with
+TypeShop Collection; if you are not affiliated with Vital City you must obtain
+your own license to use it.
+
+The VITAL CITY wordmark and logo are trademarks of Vital City. The wordmark
+files in assets/ are provided for contributors producing on-brand Vital City
+work and must not be used to imply endorsement or affiliation outside that
+context.
+
+Brand guidelines authored by Design for Progress, September 2024.

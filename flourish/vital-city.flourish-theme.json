@@ -1,0 +1,88 @@
+{
+  "_description": "Vital City Flourish theme settings. Paste these into the Preview > Settings panel of any Flourish visualization, or save as an account-level custom theme in Flourish Enterprise. Values are extracted from published Vital City Flourish charts (Dec 2025 / Apr 2026).",
+  "_template_compatibility": [
+    "@flourish/line-bar-pie",
+    "@flourish/bar-chart-race",
+    "@flourish/table",
+    "@flourish/scatter",
+    "@flourish/projection-map"
+  ],
+  "colors": {
+    "palette": [
+      "#ff7c53",
+      "#dde44c",
+      "#217ebe",
+      "#e7466d",
+      "#cea9be",
+      "#384984",
+      "#9b9fbc",
+      "#cdcfde",
+      "#707175",
+      "#050507",
+      "#dddddd"
+    ],
+    "categorical_palette": [
+      "#ff7c53",
+      "#dde44c",
+      "#217ebe",
+      "#e7466d",
+      "#cea9be",
+      "#384984",
+      "#9b9fbc",
+      "#cdcfde",
+      "#707175",
+      "#050507",
+      "#dddddd"
+    ]
+  },
+  "color": {
+    "sequential_palette": "Custom",
+    "custom_palette": ["#dde44c", "#ff7c53"],
+    "custom_palette_good": ["#57aa4a", "#7cbf4e", "#9cc456", "#bdd451", "#dde44c"],
+    "custom_palette_bad":  ["#ff7c53", "#fb693c", "#ed5236", "#e03a30", "#d2232a"]
+  },
+  "layout": {
+    "body_font":     { "name": "Atlas Grotesk",        "url": "https://public.flourish.studio/fonts/444ebd21-cdee-4085-9362-100608afa32c/stylesheet.css" },
+    "title_font":    { "name": "Atlas Grotesk Medium", "url": "https://public.flourish.studio/fonts/444ebd21-cdee-4085-9362-100608afa32c/stylesheet.css" },
+    "subtitle_font": { "name": "Atlas Grotesk",        "url": "https://public.flourish.studio/fonts/444ebd21-cdee-4085-9362-100608afa32c/stylesheet.css" },
+    "font_color": "#050507",
+    "title_color": "#050507",
+    "title_weight": "normal",
+    "subtitle_color": "#707175",
+    "header_text_color": "#050507",
+    "footer_text_color": "#050507",
+    "source_label": "Source: ",
+    "border": {
+      "top":    { "color": "#050507" },
+      "right":  { "color": "#050507" },
+      "bottom": { "color": "#050507" },
+      "left":   { "color": "#050507" }
+    }
+  },
+  "x": {
+    "gridline_color": "#dddddd",
+    "tick_label_color": "#707175",
+    "title_color": "#050507",
+    "title_weight": "normal"
+  },
+  "y": {
+    "gridline_color": "#dddddd",
+    "tick_label_color": "#707175",
+    "title_color": "#050507",
+    "title_weight": "normal"
+  },
+  "popup": {
+    "popup_text_color": "#ffffff",
+    "popup_list_label_weight": "bold"
+  },
+  "dropdown_style":  { "border_color": "#050507" },
+  "button_style":    { "font_color": "#050507" },
+  "_notes": {
+    "series_order":  "Place the focal subject in series 1 so it gets Safety Orange. If NYC is being compared to other cities, override series 1 to Magenta (#e7466d) and series 2 to Cerulean (#217ebe) via the per-series color override.",
+    "gridlines":     "Keep horizontal gridlines at #dddddd, 1px; omit vertical gridlines where possible.",
+    "trend_lines":   "For combo bar+line charts, set the line to Safety Orange with direct data labels in the same color.",
+    "annotations":   "Use dotted vertical lines (1px dotted #050507) with rotated text for contextual events (e.g., 'pandemic').",
+    "source_line":   "Always include; start with 'Source: ' and link dataset names where possible. Include methodological notes inline (e.g., '2025 is year-to-date through 12/07').",
+    "logo":          "Do not paste the VITAL CITY logo into the chart if it will render under 20px tall — it becomes an unreadable black bar. Place the logo in the page container, not the chart itself, for web embeds."
+  }
+}

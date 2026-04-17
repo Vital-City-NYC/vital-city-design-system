@@ -1,0 +1,48 @@
+{
+  "_description": "Vital City theme for Vega-Lite. Pass as the `config` key of any spec.",
+  "background": "#ffffff",
+  "font": "halyard-text, Inter, system-ui, sans-serif",
+  "title": {
+    "font": "halyard-text, Inter, system-ui, sans-serif",
+    "fontWeight": 900,
+    "fontSize": 20,
+    "color": "#050507",
+    "anchor": "start",
+    "subtitleColor": "#707175",
+    "subtitleFontWeight": 200,
+    "subtitleFontSize": 14
+  },
+  "axis": {
+    "labelColor": "#707175",
+    "labelFont": "halyard-text, Inter, system-ui, sans-serif",
+    "labelFontSize": 11,
+    "titleColor": "#050507",
+    "titleFont": "halyard-text, Inter, system-ui, sans-serif",
+    "titleFontWeight": 700,
+    "titleFontSize": 12,
+    "domainColor": "#050507",
+    "tickColor": "#707175",
+    "gridColor": "#dddddd",
+    "gridOpacity": 1,
+    "grid": true
+  },
+  "axisX": { "grid": false },
+  "legend": {
+    "labelColor": "#050507",
+    "labelFont": "halyard-text, Inter, system-ui, sans-serif",
+    "titleColor": "#050507",
+    "titleFontWeight": 700
+  },
+  "range": {
+    "category": [
+      "#ff7c53", "#dde44c", "#217ebe", "#e7466d", "#cea9be",
+      "#394882", "#9b9fbc", "#cdcfde", "#707175", "#050507", "#dddddd"
+    ],
+    "diverging": ["#d2232a", "#e03a30", "#ed5236", "#fb693c", "#ff7c53", "#dde44c", "#bdd451", "#9cc456", "#7cbf4e", "#57aa4a"],
+    "heatmap":   ["#f7f8dd", "#edefa8", "#e4e871", "#dde44c", "#bdd451", "#9cc456", "#7cbf4e", "#57aa4a"],
+    "ramp":      ["#fde5dd", "#fabcaa", "#f69577", "#ff7c53", "#fb693c", "#ed5236", "#e03a30", "#d2232a"]
+  },
+  "bar":   { "fill": "#dde44c" },
+  "line":  { "stroke": "#ff7c53", "strokeWidth": 2 },
+  "point": { "fill": "#ff7c53", "stroke": "#050507", "strokeWidth": 0.75 }
+}

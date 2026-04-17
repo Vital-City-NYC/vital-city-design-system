@@ -1,0 +1,148 @@
+/*
+ * Vital City design tokens
+ * Source: Vital City Brand Guidelines (Design for Progress, Sept 2024)
+ * + live site + Flourish chart conventions.
+ */
+
+:root {
+  /* ---------- Primary palette ---------- */
+  --vc-black: #050507;
+  --vc-white: #ffffff;
+  --vc-cloud: #dddddd;
+  --vc-chartreuse: #dde44c;
+  --vc-orange: #ff7c53;        /* Safety Orange */
+  --vc-periwinkle: #9b9fbc;
+
+  /* ---------- Secondary palette ---------- */
+  --vc-rose: #cea9be;
+  --vc-magenta: #e7466d;
+  --vc-charcoal: #707175;
+  --vc-indigo: #394882;         /* brand guide value */
+  --vc-indigo-alt: #384984;     /* Flourish value; keep both in sync */
+  --vc-cerulean: #217ebe;
+
+  /* ---------- Tints (80 / 50 / 20) ---------- */
+  --vc-chartreuse-80: #e4e871;
+  --vc-chartreuse-50: #edefa8;
+  --vc-chartreuse-20: #f7f8dd;
+
+  --vc-orange-80: #f69577;
+  --vc-orange-50: #fabcaa;
+  --vc-orange-20: #fde5dd;
+
+  --vc-periwinkle-80: #b0b3c9;
+  --vc-periwinkle-50: #cdcfde;
+  --vc-periwinkle-20: #ecebf0;
+
+  --vc-rose-80: #d7b9cb;
+  --vc-rose-50: #e8d5df;
+  --vc-rose-20: #f5eef2;
+
+  --vc-magenta-80: #ec6b8a;
+  --vc-magenta-50: #f3a3b6;
+  --vc-magenta-20: #fadae2;
+
+  --vc-charcoal-80: #8d8d90;
+  --vc-charcoal-50: #b9b9ba;
+  --vc-charcoal-20: #e2e3e2;
+
+  --vc-indigo-80: #616d9b;
+  --vc-indigo-50: #9ca4c1;
+  --vc-indigo-20: #d7dae6;
+
+  --vc-cerulean-80: #4e98cb;
+  --vc-cerulean-50: #90bfdf;
+  --vc-cerulean-20: #d2e4f0;
+
+  /* ---------- Data-viz tertiary (gradients only) ---------- */
+  --vc-goodest-green: #57aa4a;
+  --vc-good-3: #7cbf4e;
+  --vc-good-2: #9cc456;
+  --vc-good-1: #bdd451;
+  /* chartreuse is the "good 0" end */
+  /* orange is the "bad 0" end */
+  --vc-bad-1: #fb693c;
+  --vc-bad-2: #ed5236;
+  --vc-bad-3: #e03a30;
+  --vc-baddest-red: #d2232a;
+
+  /* ---------- Semantic roles ---------- */
+  --vc-text: var(--vc-black);
+  --vc-text-muted: var(--vc-charcoal);
+  --vc-bg: var(--vc-white);
+  --vc-bg-alt: var(--vc-cloud);
+  --vc-bg-dark: var(--vc-black);
+  --vc-border: var(--vc-cloud);
+  --vc-rule: var(--vc-black);
+  --vc-accent: var(--vc-orange);         /* CTAs, kickers, trend lines */
+  --vc-pop: var(--vc-chartreuse);        /* underlines, drop shadows — purposeful, sparing */
+  --vc-focal: var(--vc-magenta);         /* subject-of-analysis highlight */
+  --vc-compare: var(--vc-cerulean);      /* comparison group */
+
+  /* ---------- Typography ---------- */
+  --vc-font-sans: "halyard-text", "Inter", "Helvetica Neue", Arial, sans-serif;
+  --vc-font-serif: "GascogneTS", "Source Serif 4", Georgia, "Times New Roman", serif;
+  --vc-font-chart: "Atlas Grotesk", "halyard-text", "Inter", system-ui, sans-serif;
+
+  /* weights */
+  --vc-weight-light: 200;
+  --vc-weight-book: 300;
+  --vc-weight-bold: 700;
+  --vc-weight-black: 900;
+
+  /* type scale — the display end leans serif (Gascogne); UI end stays sans (Halyard) */
+  --vc-size-display: clamp(2.25rem, 4vw, 3.75rem);   /* hero serif titles */
+  --vc-size-h1: clamp(1.75rem, 2.6vw, 2.5rem);
+  --vc-size-h2: clamp(1.375rem, 1.8vw, 1.75rem);
+  --vc-size-h3: 1.125rem;
+  --vc-size-body: 1rem;
+  --vc-size-small: 0.875rem;
+  --vc-size-micro: 0.75rem;               /* kickers, date stamps */
+
+  --vc-lh-tight: 1.1;
+  --vc-lh-snug: 1.2;
+  --vc-lh-body: 1.55;
+
+  --vc-track-kicker: 0.08em;              /* 80pt tracking in the book is ~0.08em on web */
+  --vc-track-caps: 0.04em;
+
+  /* ---------- Layout & spacing ---------- */
+  --vc-space-1: 0.25rem;
+  --vc-space-2: 0.5rem;
+  --vc-space-3: 0.75rem;
+  --vc-space-4: 1rem;
+  --vc-space-5: 1.5rem;
+  --vc-space-6: 2rem;
+  --vc-space-7: 3rem;
+  --vc-space-8: 4.5rem;
+  --vc-space-9: 6rem;
+
+  --vc-container: 72rem;
+  --vc-container-wide: 84rem;
+  --vc-container-narrow: 44rem;           /* reading column */
+
+  --vc-rule-thin: 1px;
+  --vc-rule-bold: 2px;
+
+  --vc-radius-pill: 999px;                /* the DONATE button style */
+  --vc-radius: 0;                          /* default: no rounding — architectural */
+
+  --vc-shadow-pop: 4px 4px 0 var(--vc-chartreuse);  /* print-style drop shadow pop */
+
+  /* ---------- Chart-specific tokens (match Flourish settings) ---------- */
+  --vc-chart-grid: var(--vc-cloud);
+  --vc-chart-tick: var(--vc-charcoal);
+  --vc-chart-axis-title: var(--vc-black);
+  --vc-chart-subtitle: var(--vc-charcoal);
+  --vc-chart-title: var(--vc-black);
+}
+
+/* Dark panel (Data section inversion) */
+.vc-dark {
+  --vc-bg: var(--vc-black);
+  --vc-text: var(--vc-white);
+  --vc-text-muted: var(--vc-periwinkle);
+  --vc-border: #2a2a2e;
+  color: var(--vc-text);
+  background: var(--vc-bg);
+}

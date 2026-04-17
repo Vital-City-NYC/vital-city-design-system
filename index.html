@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vital City Design System</title>
+<meta name="description" content="Vital City's brand tokens, components, typography and data-visualization conventions.">
+<link rel="stylesheet" href="https://use.typekit.net/qqk2vto.css">
+<link rel="stylesheet" href="tokens/tokens.css">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="components/components.css">
+<link rel="stylesheet" href="charts/chart-theme.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="vc-nav">
+  <a class="vc-nav__wordmark" href="/"><img src="assets/vc-logo-black.png" alt="Vital City"></a>
+  <span class="vc-nav__tagline">Design system.</span>
+  <ul class="vc-nav__links">
+    <li><a href="#brand">Brand</a></li>
+    <li><a href="#color">Color</a></li>
+    <li><a href="#type">Type</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#charts">Charts</a></li>
+    <li><a href="#voice">Voice</a></li>
+  </ul>
+  <a class="vc-btn" href="https://www.vitalcitynyc.org">Go to site</a>
+</header>
+
+<main class="vc-container-wide">
+
+<!-- ============ HERO ============ -->
+<section style="padding: var(--vc-space-8) 0 var(--vc-space-7);">
+  <p class="vc-kicker">Vital City &nbsp;/&nbsp; design system</p>
+  <h1 class="vc-display" style="margin-top: var(--vc-space-3); max-width: 22ch;">
+    A working kit for <span class="vc-underline-pop">data-driven</span>,
+    <span class="vc-underline-pop">measured</span>,
+    <span class="vc-underline-pop">charming</span> urban-policy design.
+  </h1>
+  <p class="vc-dek" style="max-width: 56ch; margin-top: var(--vc-space-5);">
+    Tokens, components, fonts, chart themes and editorial guidance — everything needed
+    to produce on-brand Vital City artifacts. Drop this into any project or import files à la carte.
+  </p>
+  <div style="display:flex; gap: var(--vc-space-3); margin-top: var(--vc-space-5);">
+    <a class="vc-btn" href="#color">Browse tokens</a>
+    <a class="vc-btn vc-btn--ghost" href="#charts">See chart specs</a>
+  </div>
+</section>
+
+<!-- ============ BRAND DNA ============ -->
+<section id="brand">
+  <div class="vc-section-head">
+    <h2 class="vc-section-head__title">Brand DNA</h2>
+    <a class="vc-section-head__link" href="docs/BRAND.md">Read more →</a>
+  </div>
+  <hr class="vc-hairline">
+  <div class="vc-grid vc-grid--3">
+    <div>
+      <p class="vc-kicker vc-kicker--muted">Promise</p>
+      <p>Diverse, evidenced, actionable expertise on public safety and urban policy in a package that is easy to understand and enjoyable to engage with.</p>
+    </div>
+    <div>
+      <p class="vc-kicker vc-kicker--muted">Is</p>
+      <p>Data-driven · Sophisticated · Measured · Nuanced · Succinct · Charming · Intellectually energizing · Pragmatic · Clever.</p>
+    </div>
+    <div>
+      <p class="vc-kicker vc-kicker--muted">Is not</p>
+      <p>Clinical · Pretentious · Dry · Precious · Austere · Cute · Politically agitative · Pessimistic · Smart&nbsp;aleck-y.</p>
+    </div>
+  </div>
+  <p class="vc-pullquote" style="margin-top: var(--vc-space-6); max-width: 60ch;">
+    If Vital City were a person, they would walk quite fast with efficiency and purpose, strike
+    a certain contrapposto pose while waiting for the subway, and slap the top of a cab to say thanks.
+  </p>
+</section>
+
+<!-- ============ COLOR ============ -->
+<section id="color">
+  <div class="vc-section-head">
+    <h2 class="vc-section-head__title">Color</h2>
+    <a class="vc-section-head__link" href="tokens/tokens.css">tokens.css →</a>
+  </div>
+  <hr class="vc-hairline">
+
+  <p class="vc-kicker vc-kicker--muted" style="margin-bottom: var(--vc-space-3);">Primary</p>
+  <div class="vc-swatches">
+    <div class="vc-swatch"><div class="vc-swatch__chip" style="background:#050507"></div><div class="vc-swatch__meta"><span class="vc-swatch__name">Black</span><span class="vc-swatch__hex">#050507</span></div></div>
+    <div class="vc-swatch"><div class="vc-swatch__chip" style="background:#ffffff; border-bottom:1px solid var(--vc-border);"></div><div class="vc-swatch__meta"><span class="vc-swatch__name">White</span><span class="vc-swatch__hex">#ffffff</span></div></div>
+    <div class="vc-swatch"><div class="vc-swatch__chip" style="background:#dddddd"></div><div class="vc-swatch__meta"><span class="vc-swatch__name">Cloud</span><span class="vc-swatch__hex">#dddddd</span></div></div>
+    <div class="vc-swatch"><div class="vc-swatch__chip" style="background:#dde44c"></div><div class="vc-swatch__meta"><span class="vc-swatch__name">Chartreuse</span><span class="vc-swatch__hex">#dde44c</span></div></div>
+    <div class="vc-swatch"><div class="vc-swatch__chip" style="background:#ff7c53"></div><div class="vc-swatch__meta"><span class="vc-swatch__name">Safety Orange</span><span class="vc-swatch__hex">#ff7c53</span></div></div>
+    <div class="vc-swatch"><div class="vc-swatch__chip" style="background:#9b9fbc"></div><div class="vc-swatch__meta"><span class="vc-swatch__name">Periwinkle</span><span class="vc-swatch__hex">#9b9fbc</span></div></div>
+  </div>
+
+  <p class="vc-kicker vc-kicker--muted" style="margin: var(--vc-space-6) 0 var(--vc-space-3);">Secondary</p>
+  <div class="vc-swatches">
+    <div class="vc-swatch"><div class="vc-swatch__chip" style="background:#cea9be"></div><div class="vc-swatch__meta"><span class="vc-swatch__name">Rose</span><span class="vc-swatch__hex">#cea9be</span></div></div>
+    <div class="vc-swatch"><div class="vc-swatch__chip" style="background:#e7466d"></div><div class="vc-swatch__meta"><span class="vc-swatch__name">Magenta</span><span class="vc-swatch__hex">#e7466d</span></div></div>
+    <div class="vc-swatch"><div class="vc-swatch__chip" style="background:#707175"></div><div class="vc-swatch__meta"><span class="vc-swatch__name">Charcoal</span><span class="vc-swatch__hex">#707175</span></div></div>
+    <div class="vc-swatch"><div class="vc-swatch__chip" style="background:#394882"></div><div class="vc-swatch__meta"><span class="vc-swatch__name">Indigo</span><span class="vc-swatch__hex">#394882</span></div></div>
+    <div class="vc-swatch"><div class="vc-swatch__chip" style="background:#217ebe"></div><div class="vc-swatch__meta"><span class="vc-swatch__name">Cerulean</span><span class="vc-swatch__hex">#217ebe</span></div></div>
+  </div>
+
+  <p class="vc-kicker vc-kicker--muted" style="margin: var(--vc-space-6) 0 var(--vc-space-3);">Data-viz gradient — good → bad</p>
+  <div style="height: 36px; background: linear-gradient(to right, #57aa4a, #7cbf4e, #9cc456, #bdd451, #dde44c, #ff7c53, #fb693c, #ed5236, #e03a30, #d2232a); border: 1px solid var(--vc-border);"></div>
+  <p class="vc-meta" style="margin-top: var(--vc-space-2);">Use sparingly. Drop steps to reduce color vibration.</p>
+
+  <div style="background: var(--vc-black); color: var(--vc-white); padding: var(--vc-space-6); margin-top: var(--vc-space-6);">
+    <p class="vc-kicker vc-kicker--white">Role</p>
+    <ul style="list-style:none; padding:0; display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--vc-space-3); margin: var(--vc-space-3) 0 0;">
+      <li><strong>Pop</strong> (chartreuse) — underlines, drop shadows, primary fill</li>
+      <li><strong>Accent</strong> (orange) — nav, CTAs, kickers, trend lines</li>
+      <li><strong>Focal</strong> (magenta) — the subject of analysis</li>
+      <li><strong>Compare</strong> (cerulean) — comparison groups</li>
+      <li><strong>Muted</strong> (charcoal) — axis labels, deks, metadata</li>
+      <li><strong>Neutral</strong> (periwinkle) — sophisticated filler</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ TYPOGRAPHY ============ -->
+<section id="type">
+  <div class="vc-section-head">
+    <h2 class="vc-section-head__title">Typography</h2>
+    <a class="vc-section-head__link" href="fonts/fonts.css">fonts.css →</a>
+  </div>
+  <hr class="vc-hairline">
+  <div class="vc-grid vc-grid--2">
+    <div>
+      <p class="vc-kicker vc-kicker--muted">Halyard Text · primary</p>
+      <p class="vc-halyard-black" style="font-size: 2.5rem; line-height: 1.1; margin: var(--vc-space-3) 0;">Halyard Black 900</p>
+      <p class="vc-halyard-bold"  style="font-size: 1.25rem;">Halyard Bold 700 · small caps labels, kickers</p>
+      <p class="vc-halyard-book"  style="font-size: 1rem;">Halyard Book 300 · body copy, chart annotations. A finely balanced contemporary take on the classic grotesques of the 19th and 20th centuries.</p>
+      <p class="vc-halyard-light" style="font-size: 1.125rem;">Halyard Light 200 · subheads, chart subtitles and deks.</p>
+    </div>
+    <div>
+      <p class="vc-kicker vc-kicker--muted">Gascogne Extra Light · secondary serif</p>
+      <p class="vc-gascogne" style="font-size: 2.5rem; line-height: 1.05; margin: var(--vc-space-3) 0;">Gascogne Light 300</p>
+      <p class="vc-gascogne" style="font-size: 1.15rem; font-style: italic;">Article deks and alternative title style. Refreshing serif break from Halyard.</p>
+      <p class="vc-pullquote" style="margin-top: var(--vc-space-5); max-width: 32ch;">
+        Pullquotes are set in Gascogne, never in quotation marks.
+      </p>
+    </div>
+  </div>
+
+  <hr class="vc-rule" style="margin: var(--vc-space-7) 0;">
+
+  <p class="vc-kicker vc-kicker--muted" style="margin-bottom: var(--vc-space-3);">Type scale</p>
+  <div style="display:flex; flex-direction:column; gap: var(--vc-space-4);">
+    <div><span class="vc-meta">Display · Gascogne</span><p class="vc-display" style="margin:0.25rem 0 0;">To Prioritize Pedestrians, We Need to Walk the Walk</p></div>
+    <div><span class="vc-meta">H1 · Halyard Black</span><p class="vc-h1" style="margin:0.25rem 0 0;">1 in 7 days in 2025 were shooting-free</p></div>
+    <div><span class="vc-meta">H2</span><p class="vc-h2" style="margin:0.25rem 0 0;">A reduction that lags the nation</p></div>
+    <div><span class="vc-meta">Dek · Halyard Light</span><p class="vc-dek" style="margin:0.25rem 0 0;">Percent change in murder rates between 2019 and 2025*</p></div>
+    <div><span class="vc-meta">Kicker · Halyard Bold caps</span><p class="vc-kicker" style="margin:0.25rem 0 0;">Crime · City Planning · Homelessness</p></div>
+  </div>
+</section>
+
+<!-- ============ COMPONENTS ============ -->
+<section id="components">
+  <div class="vc-section-head">
+    <h2 class="vc-section-head__title">Components</h2>
+    <a class="vc-section-head__link" href="components/components.css">components.css →</a>
+  </div>
+  <hr class="vc-hairline">
+
+  <p class="vc-kicker vc-kicker--muted">Buttons</p>
+  <div style="display:flex; gap: var(--vc-space-3); flex-wrap: wrap; margin: var(--vc-space-3) 0 var(--vc-space-6);">
+    <a class="vc-btn" href="#">Donate</a>
+    <a class="vc-btn vc-btn--ghost" href="#">Subscribe</a>
+    <a class="vc-btn vc-btn--orange" href="#">Explore data</a>
+    <a class="vc-btn vc-btn--square" href="#">Read more</a>
+  </div>
+
+  <p class="vc-kicker vc-kicker--muted">Article cards</p>
+  <div class="vc-grid vc-grid--3" style="margin-top: var(--vc-space-3);">
+    <a class="vc-card" href="#">
+      <div class="vc-card__media">
+        <img class="vc-card__img" src="https://images.unsplash.com/photo-1514565131-fce0801e5785?w=800&h=500&fit=crop" alt="">
+        <span class="vc-card__tag" style="color: var(--vc-accent)">City Planning</span>
+      </div>
+      <h3 class="vc-card__title">To prioritize pedestrians, we need to walk the walk</h3>
+      <p class="vc-card__dek">Behind a major new effort to track pedestrian flows in New York</p>
+      <span class="vc-card__byline">Andres Sevtsuk</span>
+    </a>
+    <a class="vc-card" href="#">
+      <div class="vc-card__media">
+        <img class="vc-card__img" src="https://images.unsplash.com/photo-1573599852326-2d4da0bbe613?w=800&h=500&fit=crop" alt="">
+        <span class="vc-card__tag" style="color: var(--vc-accent)">Homelessness</span>
+      </div>
+      <h3 class="vc-card__title">Why it (almost) always makes sense to send the cops</h3>
+      <p class="vc-card__dek">When outreach is sparse, patrol response fills the gap</p>
+      <span class="vc-card__byline">Jerry Ratcliffe</span>
+    </a>
+    <a class="vc-card" href="#">
+      <div class="vc-card__media">
+        <img class="vc-card__img" src="https://images.unsplash.com/photo-1517504734587-2890819debab?w=800&h=500&fit=crop" alt="">
+        <span class="vc-card__tag" style="color: var(--vc-accent)">Crime</span>
+      </div>
+      <h3 class="vc-card__title">Murders are lower than prepandemic, but other crimes remain above 2019 levels</h3>
+      <p class="vc-card__dek">A closer look at what the numbers actually show</p>
+      <span class="vc-card__byline">Vital City</span>
+    </a>
+  </div>
+
+  <p class="vc-kicker vc-kicker--muted" style="margin-top: var(--vc-space-7);">Feature card — panel tucked into the image</p>
+  <div class="vc-card vc-card--feature" style="margin-top: var(--vc-space-3); max-width: 760px;">
+    <div class="vc-card__media">
+      <img class="vc-card__img" src="https://images.unsplash.com/photo-1534430480872-3498386e7856?w=1200&h=700&fit=crop" alt="">
+    </div>
+    <div class="vc-card__panel">
+      <p class="vc-kicker">Just Fix It · Apr. 14 2026</p>
+      <h3 class="vc-card__title">Mamdani's first 100 days: a scorecard</h3>
+      <hr>
+      <p class="vc-card__dek">How's he doing when it comes to helping the gears of government turn better?</p>
+    </div>
+  </div>
+
+  <p class="vc-kicker vc-kicker--muted" style="margin-top: var(--vc-space-7);">Photo tag with arrow — "Data" section treatment</p>
+  <div class="vc-grid vc-grid--3" style="margin-top: var(--vc-space-3);">
+    <div style="position:relative;"><img src="https://images.unsplash.com/photo-1483653364400-eedcfb9f1f88?w=800&h=1000&fit=crop" alt=""><span class="vc-photo-tag">Crime</span></div>
+    <div style="position:relative;"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=1000&fit=crop" alt=""><span class="vc-photo-tag">Jails</span></div>
+    <div style="position:relative;"><img src="https://images.unsplash.com/photo-1556122071-e404cb6f31c0?w=800&h=1000&fit=crop" alt=""><span class="vc-photo-tag">Subway</span></div>
+  </div>
+</section>
+
+<!-- ============ CHARTS ============ -->
+<section id="charts">
+  <div class="vc-section-head">
+    <h2 class="vc-section-head__title">Data visualization</h2>
+    <a class="vc-section-head__link" href="flourish/vital-city.flourish-theme.json">Flourish theme →</a>
+  </div>
+  <hr class="vc-hairline">
+
+  <div class="vc-grid vc-grid--2">
+    <div>
+      <h3 class="vc-h3">Categorical series order</h3>
+      <p>Matches published Vital City Flourish charts. Place the focal subject in series 1 to get Safety Orange. Override to Magenta when you want the focal highlight.</p>
+      <ol style="padding-left: 1.25rem; line-height: 1.9;">
+        <li><span style="display:inline-block; width:14px; height:14px; background:#ff7c53; vertical-align:middle;"></span> Safety Orange — <code>#ff7c53</code></li>
+        <li><span style="display:inline-block; width:14px; height:14px; background:#dde44c; vertical-align:middle;"></span> Chartreuse — <code>#dde44c</code></li>
+        <li><span style="display:inline-block; width:14px; height:14px; background:#217ebe; vertical-align:middle;"></span> Cerulean — <code>#217ebe</code></li>
+        <li><span style="display:inline-block; width:14px; height:14px; background:#e7466d; vertical-align:middle;"></span> Magenta — <code>#e7466d</code></li>
+        <li><span style="display:inline-block; width:14px; height:14px; background:#cea9be; vertical-align:middle;"></span> Rose — <code>#cea9be</code></li>
+        <li><span style="display:inline-block; width:14px; height:14px; background:#384984; vertical-align:middle;"></span> Indigo — <code>#384984</code></li>
+        <li><span style="display:inline-block; width:14px; height:14px; background:#9b9fbc; vertical-align:middle;"></span> Periwinkle — <code>#9b9fbc</code></li>
+        <li><span style="display:inline-block; width:14px; height:14px; background:#cdcfde; vertical-align:middle;"></span> Periwinkle 50 — <code>#cdcfde</code></li>
+        <li><span style="display:inline-block; width:14px; height:14px; background:#707175; vertical-align:middle;"></span> Charcoal — <code>#707175</code></li>
+        <li><span style="display:inline-block; width:14px; height:14px; background:#050507; vertical-align:middle;"></span> Black — <code>#050507</code></li>
+        <li><span style="display:inline-block; width:14px; height:14px; background:#dddddd; vertical-align:middle;"></span> Cloud — <code>#dddddd</code></li>
+      </ol>
+    </div>
+    <div>
+      <h3 class="vc-h3">Chart tokens</h3>
+      <ul>
+        <li>Title — Halyard Black, <code>#050507</code>, sentence case, <strong>opinionated</strong> (tell the reader what it means)</li>
+        <li>Subtitle / dek — Halyard Light, <code>#707175</code></li>
+        <li>Tick labels — <code>#707175</code></li>
+        <li>Axis titles — <code>#050507</code>, normal weight</li>
+        <li>Gridlines — <code>#dddddd</code>, 1px, horizontals only where possible</li>
+        <li>Background — <code>#ffffff</code>, always</li>
+        <li>Source — "Source: " + hyperlinked dataset name, Charcoal, small</li>
+        <li>Logo — only on standalone exports ≥ 24px tall; omit from inline HTML charts</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Example SVG chart -->
+  <figure class="vc-chart" style="margin-top: var(--vc-space-7); max-width: 760px;">
+    <h3 class="vc-chart__title">1 in 7 days in 2025 were shooting-free in New York City</h3>
+    <p class="vc-chart__subtitle">Percent of days with zero shooting incidents reported to NYPD, by year*</p>
+    <svg viewBox="0 0 760 320" width="100%" role="img" aria-label="Bar chart">
+      <g transform="translate(48, 16)">
+        <!-- gridlines -->
+        <g stroke="#dddddd">
+          <line x1="0" y1="0"   x2="680" y2="0"/>
+          <line x1="0" y1="60"  x2="680" y2="60"/>
+          <line x1="0" y1="120" x2="680" y2="120"/>
+          <line x1="0" y1="180" x2="680" y2="180"/>
+          <line x1="0" y1="240" x2="680" y2="240"/>
+        </g>
+        <!-- y labels -->
+        <g font-family="halyard-text, Inter, sans-serif" font-size="11" fill="#707175" text-anchor="end">
+          <text x="-8" y="4">20%</text>
+          <text x="-8" y="64">15%</text>
+          <text x="-8" y="124">10%</text>
+          <text x="-8" y="184">5%</text>
+          <text x="-8" y="244">0%</text>
+        </g>
+        <!-- bars: 8 years, last one focal magenta -->
+        <g>
+          <rect x="20"  y="140" width="60" height="100" fill="#dde44c"/>
+          <rect x="100" y="120" width="60" height="120" fill="#dde44c"/>
+          <rect x="180" y="110" width="60" height="130" fill="#dde44c"/>
+          <rect x="260" y="100" width="60" height="140" fill="#dde44c"/>
+          <rect x="340" y="170" width="60" height="70"  fill="#dde44c"/>
+          <rect x="420" y="150" width="60" height="90"  fill="#dde44c"/>
+          <rect x="500" y="120" width="60" height="120" fill="#dde44c"/>
+          <rect x="580" y="70"  width="60" height="170" fill="#e7466d"/>
+        </g>
+        <!-- data labels -->
+        <g font-family="halyard-text, Inter, sans-serif" font-size="11" font-weight="700" fill="#050507" text-anchor="middle">
+          <text x="50"  y="134">9.8</text>
+          <text x="130" y="114">11.5</text>
+          <text x="210" y="104">12.6</text>
+          <text x="290" y="94">13.4</text>
+          <text x="370" y="164">6.3</text>
+          <text x="450" y="144">8.2</text>
+          <text x="530" y="114">11.9</text>
+          <text x="610" y="64" fill="#e7466d">14.2</text>
+        </g>
+        <!-- x labels -->
+        <g font-family="halyard-text, Inter, sans-serif" font-size="11" fill="#707175" text-anchor="middle">
+          <text x="50"  y="260">2018</text>
+          <text x="130" y="260">2019</text>
+          <text x="210" y="260">2020</text>
+          <text x="290" y="260">2021</text>
+          <text x="370" y="260">2022</text>
+          <text x="450" y="260">2023</text>
+          <text x="530" y="260">2024</text>
+          <text x="610" y="260">2025</text>
+        </g>
+        <!-- annotation -->
+        <line x1="310" y1="0" x2="310" y2="240" stroke="#050507" stroke-width="1" stroke-dasharray="2 3"/>
+        <text x="313" y="24" font-family="halyard-text, Inter, sans-serif" font-size="10" font-weight="700" fill="#050507" letter-spacing="0.04em">PANDEMIC →</text>
+      </g>
+    </svg>
+    <p class="vc-chart__source"><strong>Source:</strong> NYPD Shooting Incident Data (Historic), NYC Open Data. *2025 is year-to-date through 12/07. Illustrative figures.</p>
+  </figure>
+
+  <div style="margin-top: var(--vc-space-7); padding: var(--vc-space-5); background: var(--vc-periwinkle-20); border-left: 3px solid var(--vc-magenta);">
+    <p class="vc-kicker vc-kicker--muted">Headline rules</p>
+    <ul>
+      <li><strong>Good:</strong> "1 in 7 days in 2025 were shooting-free"</li>
+      <li><strong>Good:</strong> "The city's reduction in murders lags the nation"</li>
+      <li><strong>Bad:</strong> "Shooting-Free Days by Year" (descriptive label, not analysis)</li>
+      <li><strong>Bad:</strong> "Murder Rate Changes by City" (no point of view)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ VOICE ============ -->
+<section id="voice">
+  <div class="vc-section-head">
+    <h2 class="vc-section-head__title">Voice</h2>
+    <a class="vc-section-head__link" href="docs/VOICE.md">Read more →</a>
+  </div>
+  <hr class="vc-hairline">
+  <div class="vc-grid vc-grid--2">
+    <div>
+      <h3 class="vc-h3">What we publish</h3>
+      <p>Smart, accessible writing about how cities work — and how they could work better. Pragmatic ideas rooted in research and data that might actually improve urban governance, public safety, housing, transit, parks, budgets.</p>
+      <h3 class="vc-h3" style="margin-top: var(--vc-space-5);">The sweet spot</h3>
+      <p>"Keyhole" pieces — small, achievable changes that yield outsized benefits without requiring a political revolution. Comparative urbanism. Data that surprises. Accountability without outrage.</p>
+    </div>
+    <div>
+      <h3 class="vc-h3">Not for us</h3>
+      <p>Invective, ad hominem attacks, partisan scorekeeping, op-eds that are mostly vibes, pieces built on outrage, or arguments that blame one villain and assume bad faith.</p>
+      <h3 class="vc-h3" style="margin-top: var(--vc-space-5);">Writers can</h3>
+      <p>Acknowledge the strongest version of opposing views before disagreeing. Draw on RCTs, reporting, personal experience or deep study. Use hyperlinks, not footnotes. Be lively when possible.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="vc-footer">
+  <div class="vc-footer__grid">
+    <div>
+      <img class="vc-footer__wordmark" src="assets/vc-logo-black.png" alt="Vital City">
+      <p class="vc-gascogne" style="font-size:1.1rem; margin-top: var(--vc-space-3);">Civil conversation. Enlightening data. New ideas.</p>
+    </div>
+    <div class="vc-footer__col">
+      <h4>Explore</h4>
+      <ul><li><a href="#">Journal</a></li><li><a href="#">Commentary</a></li><li><a href="#">Data</a></li><li><a href="#">Policy</a></li></ul>
+    </div>
+    <div class="vc-footer__col">
+      <h4>About</h4>
+      <ul><li><a href="#">Our team</a></li><li><a href="#">Contributors</a></li><li><a href="#">Careers</a></li><li><a href="#">Press</a></li></ul>
+    </div>
+    <div class="vc-footer__col">
+      <h4>Get involved</h4>
+      <ul><li><a href="#">Donate</a></li><li><a href="#">Write for us</a></li><li><a href="#">Shop</a></li><li><a href="#">Events</a></li></ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

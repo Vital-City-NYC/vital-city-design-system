@@ -1,0 +1,77 @@
+/*
+ * Vital City chart theme — for standalone (non-Flourish) charts built in
+ * Vega-Lite, D3, Observable Plot, Chart.js, or raw SVG.
+ *
+ * For Flourish, import /flourish/vital-city.flourish-theme.json instead.
+ */
+
+:root {
+  --chart-bg: #ffffff;
+  --chart-fg: #050507;
+  --chart-muted: #707175;
+  --chart-grid: #dddddd;
+
+  /* Categorical series order, matching Flourish convention */
+  --chart-c1: #ff7c53;  /* orange — series 1 / primary */
+  --chart-c2: #dde44c;  /* chartreuse */
+  --chart-c3: #217ebe;  /* cerulean */
+  --chart-c4: #e7466d;  /* magenta */
+  --chart-c5: #cea9be;  /* rose */
+  --chart-c6: #394882;  /* indigo */
+  --chart-c7: #9b9fbc;  /* periwinkle */
+  --chart-c8: #cdcfde;  /* periwinkle 50 */
+  --chart-c9: #707175;  /* charcoal */
+  --chart-c10: #050507; /* black */
+  --chart-c11: #dddddd; /* cloud */
+}
+
+.vc-chart {
+  font-family: var(--vc-font-chart, "Atlas Grotesk", "halyard-text", system-ui, sans-serif);
+  color: var(--chart-fg);
+  background: var(--chart-bg);
+}
+
+.vc-chart__title {
+  font-family: var(--vc-font-sans, "halyard-text", sans-serif);
+  font-weight: 900;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: var(--chart-fg);
+  margin: 0 0 0.25rem;
+  max-width: 62ch;
+}
+
+.vc-chart__subtitle {
+  font-family: var(--vc-font-sans, "halyard-text", sans-serif);
+  font-weight: 200;
+  font-size: 0.95rem;
+  line-height: 1.3;
+  color: var(--chart-muted);
+  margin: 0 0 1rem;
+}
+
+.vc-chart__source {
+  font-family: var(--vc-font-sans, "halyard-text", sans-serif);
+  font-size: 0.75rem;
+  color: var(--chart-muted);
+  margin-top: 0.75rem;
+  border-top: 1px solid var(--chart-grid);
+  padding-top: 0.5rem;
+}
+.vc-chart__source a { color: var(--chart-muted); }
+
+.vc-chart svg .gridline,
+.vc-chart svg line.grid,
+.vc-chart svg .vc-grid line {
+  stroke: var(--chart-grid);
+  stroke-width: 1;
+}
+
+.vc-chart svg text { fill: var(--chart-fg); }
+.vc-chart svg .tick text { fill: var(--chart-muted); }
+
+.vc-chart-bar--focal { fill: #e7466d; }     /* magenta focal highlight */
+.vc-chart-bar--compare { fill: #217ebe; }   /* cerulean comparison */
+.vc-chart-bar--base { fill: #dde44c; }      /* chartreuse default */
+.vc-chart-line--trend { stroke: #ff7c53; stroke-width: 2; fill: none; }
+.vc-chart-label--trend { fill: #ff7c53; font-weight: 700; }

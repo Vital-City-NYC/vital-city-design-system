@@ -1,0 +1,28 @@
+/*
+ * Vital City web fonts
+ *
+ * 1. Halyard Text (primary) — loaded via Adobe Typekit. Add this <link> to your <head>:
+ *      <link rel="stylesheet" href="https://use.typekit.net/qqk2vto.css">
+ *    The Typekit kit on the live site (nlh6iak) is account-scoped; the qqk2vto kit
+ *    shipped with the brand skill is the canonical self-serve distribution.
+ *
+ * 2. GascogneTS Light (secondary serif) — self-hosted TTF in this directory.
+ *
+ * 3. Atlas Grotesk (chart typography) — Flourish-hosted. Only needed for parity with
+ *    Flourish embeds; your own charts should prefer Halyard.
+ */
+
+@font-face {
+  font-family: "GascogneTS";
+  src: url("GascogneTS-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Utility classes mirroring the brand type scheme */
+.vc-halyard-black { font-family: var(--vc-font-sans); font-weight: 900; }
+.vc-halyard-bold  { font-family: var(--vc-font-sans); font-weight: 700; }
+.vc-halyard-book  { font-family: var(--vc-font-sans); font-weight: 300; }
+.vc-halyard-light { font-family: var(--vc-font-sans); font-weight: 200; }
+.vc-gascogne      { font-family: var(--vc-font-serif); font-weight: 300; }
