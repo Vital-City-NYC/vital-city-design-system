@@ -59,8 +59,10 @@
   --vc-good-3: #7cbf4e;
   --vc-good-2: #9cc456;
   --vc-good-1: #bdd451;
-  /* chartreuse is the "good 0" end */
-  /* orange is the "bad 0" end */
+  /* chartreuse is the "good" endpoint of the linear gradient */
+  --vc-good-0: #e0e883;      /* divergent midpoint — "good" side */
+  --vc-bad-0: #fb9e63;       /* divergent midpoint — "bad" side */
+  /* safety orange is the "bad" endpoint of the linear gradient */
   --vc-bad-1: #fb693c;
   --vc-bad-2: #ed5236;
   --vc-bad-3: #e03a30;
@@ -75,7 +77,7 @@
   --vc-border: var(--vc-cloud);
   --vc-rule: var(--vc-black);
   --vc-accent: var(--vc-orange);         /* CTAs, kickers, trend lines */
-  --vc-pop: var(--vc-chartreuse);        /* underlines, drop shadows — purposeful, sparing */
+  --vc-pop: var(--vc-chartreuse);        /* drop shadows, chart fills, rare single-word accent — sparing */
   --vc-focal: var(--vc-magenta);         /* subject-of-analysis highlight */
   --vc-compare: var(--vc-cerulean);      /* comparison group */
 

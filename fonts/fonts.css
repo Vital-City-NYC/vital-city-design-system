@@ -12,10 +12,16 @@
  *    Flourish embeds; your own charts should prefer Halyard.
  */
 
+/*
+ * GascogneTS: the brand calls for "Extra Light" but the shipped TTF is the
+ * Light weight (300). Declaring it at 200 prevents browsers from synth-bolding
+ * when we request 200 and keeps the optical feel closer to the brand book's
+ * Extra Light. Replace with a true Extra Light TTF when available.
+ */
 @font-face {
   font-family: "GascogneTS";
   src: url("GascogneTS-Light.ttf") format("truetype");
-  font-weight: 300;
+  font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
@@ -25,4 +31,9 @@
 .vc-halyard-bold  { font-family: var(--vc-font-sans); font-weight: 700; }
 .vc-halyard-book  { font-family: var(--vc-font-sans); font-weight: 300; }
 .vc-halyard-light { font-family: var(--vc-font-sans); font-weight: 200; }
-.vc-gascogne      { font-family: var(--vc-font-serif); font-weight: 300; }
+.vc-gascogne {
+  font-family: var(--vc-font-serif);
+  font-weight: 200;
+  font-synthesis: none;
+  letter-spacing: -0.003em;
+}

@@ -43,6 +43,7 @@ hr.vc-rule {
 .vc-display {
   font-family: var(--vc-font-serif);
   font-weight: var(--vc-weight-light);
+  font-synthesis: none;
   font-size: var(--vc-size-display);
   line-height: var(--vc-lh-tight);
   letter-spacing: -0.005em;
@@ -113,18 +114,23 @@ hr.vc-rule {
 .vc-pullquote {
   font-family: var(--vc-font-serif);
   font-weight: var(--vc-weight-light);
+  font-synthesis: none;
   font-size: clamp(1.375rem, 2.2vw, 1.875rem);
   line-height: 1.3;
   margin: var(--vc-space-6) 0;
   /* NEVER wrap in quotation marks — per stylebook */
 }
 
+/*
+ * Chartreuse underline: deemphasized. Formerly a highlighter-style flood at
+ * 0.25em; now a hairline accent. Use sparingly — at most one word per page.
+ */
 .vc-underline-pop {
   background-image: linear-gradient(var(--vc-pop), var(--vc-pop));
   background-repeat: no-repeat;
-  background-position: 0 88%;
-  background-size: 100% 0.25em;
-  padding-bottom: 0.05em;
+  background-position: 0 98%;
+  background-size: 100% 2px;
+  padding-bottom: 0.02em;
 }
 
 /* ---------- Nav ---------- */
@@ -199,8 +205,10 @@ hr.vc-rule {
 .vc-section-head__title {
   font-family: var(--vc-font-serif);
   font-weight: var(--vc-weight-light);
+  font-synthesis: none;
   font-size: clamp(2rem, 3vw, 2.75rem);
   line-height: 1.05;
+  letter-spacing: -0.003em;
   margin: 0;
 }
 .vc-section-head__link {
@@ -283,8 +291,10 @@ hr.vc-rule {
 .vc-card--feature .vc-card__title {
   font-family: var(--vc-font-serif);
   font-weight: var(--vc-weight-light);
+  font-synthesis: none;
   font-size: clamp(1.75rem, 3vw, 2.75rem);
   line-height: 1.05;
+  letter-spacing: -0.003em;
 }
 .vc-card--feature hr {
   border: 0;

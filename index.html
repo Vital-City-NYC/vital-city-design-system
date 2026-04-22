@@ -34,8 +34,7 @@
 <section style="padding: var(--vc-space-8) 0 var(--vc-space-7);">
   <p class="vc-kicker">Vital City &nbsp;/&nbsp; design system</p>
   <h1 class="vc-display" style="margin-top: var(--vc-space-3); max-width: 22ch;">
-    A working kit for <span class="vc-underline-pop">data-driven</span>,
-    <span class="vc-underline-pop">measured</span>,
+    A working kit for data-driven, measured,
     <span class="vc-underline-pop">charming</span> urban-policy design.
   </h1>
   <p class="vc-dek" style="max-width: 56ch; margin-top: var(--vc-space-5);">
@@ -102,14 +101,96 @@
     <div class="vc-swatch"><div class="vc-swatch__chip" style="background:#217ebe"></div><div class="vc-swatch__meta"><span class="vc-swatch__name">Cerulean</span><span class="vc-swatch__hex">#217ebe</span></div></div>
   </div>
 
-  <p class="vc-kicker vc-kicker--muted" style="margin: var(--vc-space-6) 0 var(--vc-space-3);">Data-viz gradient — good → bad</p>
-  <div style="height: 36px; background: linear-gradient(to right, #57aa4a, #7cbf4e, #9cc456, #bdd451, #dde44c, #ff7c53, #fb693c, #ed5236, #e03a30, #d2232a); border: 1px solid var(--vc-border);"></div>
-  <p class="vc-meta" style="margin-top: var(--vc-space-2);">Use sparingly. Drop steps to reduce color vibration.</p>
+  <p class="vc-kicker vc-kicker--muted" style="margin: var(--vc-space-6) 0 var(--vc-space-3);">Gradients for data visualization</p>
+  <p style="max-width: 64ch; margin: 0 0 var(--vc-space-5);">Used for maps, choropleths and tables where a spectrum or divergence matters. Tertiary "good/bad" colors are <strong>not</strong> general brand colors — they belong in data viz only, and should be used sparingly. Drop steps to reduce color vibration; prefer primary/secondary colors or tertiaries closest to them.</p>
+
+  <!-- Linear good → bad -->
+  <p class="vc-meta" style="margin: 0 0 var(--vc-space-2);">"Good" → "bad", linear</p>
+  <div style="display:grid; grid-template-columns: 1fr auto 1fr; align-items:center; gap: var(--vc-space-3); margin-bottom: var(--vc-space-6);">
+    <div style="height: 44px; background: linear-gradient(to right, #dde44c, #ff7c53); border: 1px solid var(--vc-border); position: relative;">
+      <span style="position:absolute; left:8px; top:50%; transform:translateY(-50%); font-family: var(--vc-font-sans); font-weight:700; font-size: 0.75rem;">Chartreuse</span>
+      <span style="position:absolute; right:8px; top:50%; transform:translateY(-50%); font-family: var(--vc-font-sans); font-weight:700; font-size: 0.75rem; color:#050507;">Safety Orange</span>
+    </div>
+    <span class="vc-meta" style="color: var(--vc-charcoal);">→</span>
+    <span></span>
+  </div>
+
+  <!-- Binned "good" -->
+  <p class="vc-meta" style="margin: 0 0 var(--vc-space-2);">"Good" / colder, binned ←</p>
+  <div style="display:grid; grid-template-columns: repeat(5, 1fr); gap: 2px; margin-bottom: var(--vc-space-5);">
+    <div style="background:#57aa4a; padding: var(--vc-space-3); color:#fff;">
+      <div style="font-family: var(--vc-font-sans); font-weight:700; font-size:0.8125rem;">Goodest Green</div>
+      <div style="font-family: var(--vc-font-chart); font-size: 0.75rem; opacity:0.9;">#57aa4a</div>
+    </div>
+    <div style="background:#7cbf4e; padding: var(--vc-space-3); color:#050507;">
+      <div style="font-family: var(--vc-font-sans); font-weight:700; font-size:0.8125rem;">Good 3</div>
+      <div style="font-family: var(--vc-font-chart); font-size: 0.75rem; opacity:0.8;">#7cbf4e</div>
+    </div>
+    <div style="background:#9cc456; padding: var(--vc-space-3); color:#050507;">
+      <div style="font-family: var(--vc-font-sans); font-weight:700; font-size:0.8125rem;">Good 2</div>
+      <div style="font-family: var(--vc-font-chart); font-size: 0.75rem; opacity:0.8;">#9cc456</div>
+    </div>
+    <div style="background:#bdd451; padding: var(--vc-space-3); color:#050507;">
+      <div style="font-family: var(--vc-font-sans); font-weight:700; font-size:0.8125rem;">Good 1</div>
+      <div style="font-family: var(--vc-font-chart); font-size: 0.75rem; opacity:0.8;">#bdd451</div>
+    </div>
+    <div style="background:#dde44c; padding: var(--vc-space-3); color:#050507;">
+      <div style="font-family: var(--vc-font-sans); font-weight:700; font-size:0.8125rem;">Chartreuse</div>
+      <div style="font-family: var(--vc-font-chart); font-size: 0.75rem; opacity:0.8;">#dde44c</div>
+    </div>
+  </div>
+
+  <!-- Binned "bad" -->
+  <p class="vc-meta" style="margin: 0 0 var(--vc-space-2);">"Bad" / hotter, binned →</p>
+  <div style="display:grid; grid-template-columns: repeat(5, 1fr); gap: 2px; margin-bottom: var(--vc-space-6);">
+    <div style="background:#ff7c53; padding: var(--vc-space-3); color:#050507;">
+      <div style="font-family: var(--vc-font-sans); font-weight:700; font-size:0.8125rem;">Safety Orange</div>
+      <div style="font-family: var(--vc-font-chart); font-size: 0.75rem; opacity:0.8;">#ff7c53</div>
+    </div>
+    <div style="background:#fb693c; padding: var(--vc-space-3); color:#fff;">
+      <div style="font-family: var(--vc-font-sans); font-weight:700; font-size:0.8125rem;">Bad 1</div>
+      <div style="font-family: var(--vc-font-chart); font-size: 0.75rem; opacity:0.9;">#fb693c</div>
+    </div>
+    <div style="background:#ed5236; padding: var(--vc-space-3); color:#fff;">
+      <div style="font-family: var(--vc-font-sans); font-weight:700; font-size:0.8125rem;">Bad 2</div>
+      <div style="font-family: var(--vc-font-chart); font-size: 0.75rem; opacity:0.9;">#ed5236</div>
+    </div>
+    <div style="background:#e03a30; padding: var(--vc-space-3); color:#fff;">
+      <div style="font-family: var(--vc-font-sans); font-weight:700; font-size:0.8125rem;">Bad 3</div>
+      <div style="font-family: var(--vc-font-chart); font-size: 0.75rem; opacity:0.9;">#e03a30</div>
+    </div>
+    <div style="background:#d2232a; padding: var(--vc-space-3); color:#fff;">
+      <div style="font-family: var(--vc-font-sans); font-weight:700; font-size:0.8125rem;">Baddest Red</div>
+      <div style="font-family: var(--vc-font-chart); font-size: 0.75rem; opacity:0.9;">#d2232a</div>
+    </div>
+  </div>
+
+  <!-- Divergent -->
+  <p class="vc-meta" style="margin: 0 0 var(--vc-space-2);">Divergent ←→</p>
+  <div style="display:grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 2px;">
+    <div style="background:#57aa4a; padding: var(--vc-space-3); color:#fff;">
+      <div style="font-family: var(--vc-font-sans); font-weight:700; font-size:0.8125rem;">Goodest Green</div>
+      <div style="font-family: var(--vc-font-chart); font-size: 0.75rem; opacity:0.9;">#57aa4a</div>
+    </div>
+    <div style="background:#e0e883; padding: var(--vc-space-3); color:#050507;">
+      <div style="font-family: var(--vc-font-sans); font-weight:700; font-size:0.8125rem;">Good 0</div>
+      <div style="font-family: var(--vc-font-chart); font-size: 0.75rem; opacity:0.8;">#e0e883</div>
+    </div>
+    <div style="background:#fb9e63; padding: var(--vc-space-3); color:#050507;">
+      <div style="font-family: var(--vc-font-sans); font-weight:700; font-size:0.8125rem;">Bad 0</div>
+      <div style="font-family: var(--vc-font-chart); font-size: 0.75rem; opacity:0.8;">#fb9e63</div>
+    </div>
+    <div style="background:#d2232a; padding: var(--vc-space-3); color:#fff;">
+      <div style="font-family: var(--vc-font-sans); font-weight:700; font-size:0.8125rem;">Baddest Red</div>
+      <div style="font-family: var(--vc-font-chart); font-size: 0.75rem; opacity:0.9;">#d2232a</div>
+    </div>
+  </div>
+  <p class="vc-meta" style="margin-top: var(--vc-space-2); color: var(--vc-charcoal);">Optional minimums shown — anchors may be extended with additional bins as needed.</p>
 
   <div style="background: var(--vc-black); color: var(--vc-white); padding: var(--vc-space-6); margin-top: var(--vc-space-6);">
     <p class="vc-kicker vc-kicker--white">Role</p>
     <ul style="list-style:none; padding:0; display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--vc-space-3); margin: var(--vc-space-3) 0 0;">
-      <li><strong>Pop</strong> (chartreuse) — underlines, drop shadows, primary fill</li>
+      <li><strong>Pop</strong> (chartreuse) — drop shadows, chart fills, rare single-word accent</li>
       <li><strong>Accent</strong> (orange) — nav, CTAs, kickers, trend lines</li>
       <li><strong>Focal</strong> (magenta) — the subject of analysis</li>
       <li><strong>Compare</strong> (cerulean) — comparison groups</li>

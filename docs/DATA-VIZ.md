@@ -80,10 +80,11 @@ Vital City's data viz is a core brand expression. Charts should feel like they b
 
 ## Gradients — divergent and sequential
 
-- **Good → bad, linear:** Chartreuse → Safety Orange.
-- **Good, binned:** Goodest Green (`#57aa4a`) → Good 3 (`#7cbf4e`) → Good 2 (`#9cc456`) → Good 1 (`#bdd451`) → Chartreuse.
-- **Bad, binned:** Safety Orange → Bad 1 (`#fb693c`) → Bad 2 (`#ed5236`) → Bad 3 (`#e03a30`) → Baddest Red (`#d2232a`).
-- Use sparingly. Drop colors to reduce vibration and improve legibility. Prefer primary/secondary palette colors or tertiary colors closest to them.
+- **Good → bad, linear:** Chartreuse (`#dde44c`) → Safety Orange (`#ff7c53`).
+- **Good, binned (colder):** Goodest Green (`#57aa4a`) → Good 3 (`#7cbf4e`) → Good 2 (`#9cc456`) → Good 1 (`#bdd451`) → Chartreuse (`#dde44c`).
+- **Bad, binned (hotter):** Safety Orange (`#ff7c53`) → Bad 1 (`#fb693c`) → Bad 2 (`#ed5236`) → Bad 3 (`#e03a30`) → Baddest Red (`#d2232a`).
+- **Divergent:** Goodest Green → Good 0 (`#e0e883`) → Bad 0 (`#fb9e63`) → Baddest Red. Optional minimums extend either side as needed.
+- Tertiary "good/bad" colors are for data visualization only — they are **not** general brand colors and should not appear in UI chrome, body copy, or decorative elements. Use sparingly. Drop colors to reduce vibration and improve legibility. Prefer primary/secondary palette colors or tertiary colors closest to them.
 
 ## Flourish
 

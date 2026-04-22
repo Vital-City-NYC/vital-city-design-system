@@ -35,7 +35,7 @@ Open [`index.html`](index.html) for the living style guide — every token, comp
 
 1. **Architectural, not decorative.** Clean grids. Minimal gridlines. Square corners by default. Color encodes meaning, not mood.
 2. **Serif for the headline, sans for the utility.** Gascogne for the big analytical titles and section heads; Halyard for everything that has a job to do.
-3. **Chartreuse and Safety Orange are pops, not floods.** One underline, one drop shadow, one CTA per page goes a long way.
+3. **Chartreuse and Safety Orange are pops, not floods.** One drop shadow, one CTA per page goes a long way. The old chartreuse-highlighter underline is deemphasized — use at most a single-word hairline accent, and only when it earns its place.
 4. **Data viz is a brand expression.** Headlines are opinionated ("1 in 7 days in 2025 were shooting-free"), not descriptive ("Shooting-Free Days by Year").
 5. **Voice is measured, pragmatic, evidenced.** No invective. No vibes-only op-eds. Acknowledge the strongest opposing view before you disagree.
 

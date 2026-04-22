@@ -50,17 +50,18 @@ See [`tokens/tokens.css`](../tokens/tokens.css) for every hex and tint.
 
 - **Black text is standard** — in print and on web. Color text is used sparingly for accents only.
 - **Safety Orange** appears in the nav rail and footer, occasional CTAs, category kickers, and as a trend-line color in data viz.
-- **Chartreuse** is a purposeful pop — underlines, drop shadows, primary bar fills — never decorative.
+- **Chartreuse** is a purposeful pop — drop shadows, primary bar fills, and at most one single-word accent per page. Avoid decorative underlines; the brand has moved away from them.
 - **Magenta** highlights the subject of analysis (e.g., NYC in a city comparison).
 - **Cerulean** is the comparison group.
 - Check accessibility for text on color, especially at thin weights.
 
 ### Data-viz gradients
 
-- **Good → bad, linear:** Chartreuse → Safety Orange.
-- **Good, binned:** Goodest Green → Good 3 → Good 2 → Good 1 → Chartreuse.
-- **Bad, binned:** Safety Orange → Bad 1 → Bad 2 → Bad 3 → Baddest Red.
-- Drop steps to reduce vibration; prefer primary/secondary palette colors or tertiary colors closest to them.
+- **Good → bad, linear:** Chartreuse `#dde44c` → Safety Orange `#ff7c53`.
+- **Good, binned (colder):** Goodest Green `#57aa4a` → Good 3 `#7cbf4e` → Good 2 `#9cc456` → Good 1 `#bdd451` → Chartreuse `#dde44c`.
+- **Bad, binned (hotter):** Safety Orange `#ff7c53` → Bad 1 `#fb693c` → Bad 2 `#ed5236` → Bad 3 `#e03a30` → Baddest Red `#d2232a`.
+- **Divergent:** Goodest Green → Good 0 `#e0e883` → Bad 0 `#fb9e63` → Baddest Red, with optional minimums extending each side.
+- Tertiary "good/bad" colors are for data viz only — they are **not** general brand colors. Drop steps to reduce vibration; prefer primary/secondary palette colors or the tertiary colors closest to them.
 
 ## Typography
 
@@ -113,4 +114,4 @@ Erudite serif by TypeShop Collection. Self-hosted TTF at `fonts/GascogneTS-Light
 
 - **Hairlines** and thin rules to structure layouts.
 - **Black strokes** on photos for print.
-- **Chartreuse drop shadows** behind photos in print; **chartreuse underlines** on web — purposeful, sparing.
+- **Chartreuse drop shadows** behind photos in print. Chartreuse accents on web are rare — one single-word highlight per page at most; avoid highlighter-style underlines.
