@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vital City Design System</title>
 <meta name="description" content="Vital City's brand tokens, components, typography and data-visualization conventions.">
-<link rel="stylesheet" href="https://use.typekit.net/qqk2vto.css">
+<link rel="stylesheet" href="https://use.typekit.net/nlh6iak.css">
 <link rel="stylesheet" href="tokens/tokens.css">
 <link rel="stylesheet" href="fonts/fonts.css">
 <link rel="stylesheet" href="components/components.css">
@@ -15,12 +15,14 @@
 
 <!-- ============ NAV ============ -->
 <header class="vc-nav">
-  <a class="vc-nav__wordmark" href="/"><img src="assets/vc-logo-black.png" alt="Vital City"></a>
+  <a class="vc-nav__wordmark vc-wordmark" href="/">VITAL&nbsp;CITY</a>
   <span class="vc-nav__tagline">Design system.</span>
   <ul class="vc-nav__links">
     <li><a href="#brand">Brand</a></li>
+    <li><a href="#wordmark">Wordmark</a></li>
     <li><a href="#color">Color</a></li>
     <li><a href="#type">Type</a></li>
+    <li><a href="#article-type">Article type</a></li>
     <li><a href="#components">Components</a></li>
     <li><a href="#charts">Charts</a></li>
     <li><a href="#voice">Voice</a></li>
@@ -72,6 +74,58 @@
     If Vital City were a person, they would walk quite fast with efficiency and purpose, strike
     a certain contrapposto pose while waiting for the subway, and slap the top of a cab to say thanks.
   </p>
+</section>
+
+<!-- ============ WORDMARK ============ -->
+<section id="wordmark">
+  <div class="vc-section-head">
+    <h2 class="vc-section-head__title">Wordmark</h2>
+    <a class="vc-section-head__link" href="docs/BRAND.md#wordmark">Rules →</a>
+  </div>
+  <hr class="vc-hairline">
+
+  <div class="vc-grid vc-grid--2">
+    <div>
+      <p>The canonical wordmark is set in <strong>Bayard</strong> (Vocal Type), a sans inspired by the 1963 March on Washington for Jobs and Freedom. Bayard is licensed as a retail font, not a web font — the live site ships it as a raster image.</p>
+      <p>For web uses where a real <strong>text wordmark</strong> is preferred (accessibility, dark-mode recoloring, dynamic sizing, embedded artifacts), use the Halyard-based <code>.vc-wordmark</code> component. It reads as "in system" and degrades cleanly. Never typeset "Vital City" in any other sans, in mixed case, or with the logo PNG below ~90px wide.</p>
+      <p class="vc-kicker vc-kicker--muted" style="margin-top: var(--vc-space-4);">Rules at a glance</p>
+      <ul>
+        <li>Horizontal lockup is primary; stacked and vertical are secondary.</li>
+        <li>Clear space: at least 50% of the height of the "V" on all sides.</li>
+        <li>Minimum: 1.25"/90px wide horizontal; 0.5"/54px tall stacked.</li>
+        <li>Color: Black by default, White on dark fields. Never any other color.</li>
+        <li>Never stretch, skew, angle, shadow, or place on a busy background.</li>
+      </ul>
+    </div>
+    <div>
+      <p class="vc-meta" style="margin-bottom: var(--vc-space-2);">Horizontal (primary)</p>
+      <div style="border: 1px solid var(--vc-border); padding: var(--vc-space-6); margin-bottom: var(--vc-space-4); display:flex; align-items:center; justify-content:center;">
+        <span class="vc-wordmark vc-wordmark--xl">VITAL&nbsp;CITY</span>
+      </div>
+
+      <p class="vc-meta" style="margin-bottom: var(--vc-space-2);">Stacked (secondary)</p>
+      <div style="border: 1px solid var(--vc-border); padding: var(--vc-space-6); margin-bottom: var(--vc-space-4); display:flex; align-items:center; justify-content:center;">
+        <span class="vc-wordmark vc-wordmark--stacked" style="font-size: 2.5rem;"><span>VITAL</span><span>CITY</span></span>
+      </div>
+
+      <p class="vc-meta" style="margin-bottom: var(--vc-space-2);">On dark</p>
+      <div style="background: var(--vc-black); padding: var(--vc-space-6); display:flex; align-items:center; justify-content:center;">
+        <span class="vc-wordmark vc-wordmark--large vc-wordmark--white">VITAL&nbsp;CITY</span>
+      </div>
+    </div>
+  </div>
+
+  <p class="vc-kicker vc-kicker--muted" style="margin: var(--vc-space-6) 0 var(--vc-space-3);">On palette colors</p>
+  <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 2px;">
+    <div style="background:#dde44c; padding: var(--vc-space-5); display:flex; align-items:center; justify-content:center;"><span class="vc-wordmark" style="font-size:1.25rem;">VITAL&nbsp;CITY</span></div>
+    <div style="background:#ff7c53; padding: var(--vc-space-5); display:flex; align-items:center; justify-content:center;"><span class="vc-wordmark" style="font-size:1.25rem;">VITAL&nbsp;CITY</span></div>
+    <div style="background:#9b9fbc; padding: var(--vc-space-5); display:flex; align-items:center; justify-content:center;"><span class="vc-wordmark" style="font-size:1.25rem;">VITAL&nbsp;CITY</span></div>
+    <div style="background:#cea9be; padding: var(--vc-space-5); display:flex; align-items:center; justify-content:center;"><span class="vc-wordmark" style="font-size:1.25rem;">VITAL&nbsp;CITY</span></div>
+    <div style="background:#e7466d; padding: var(--vc-space-5); display:flex; align-items:center; justify-content:center;"><span class="vc-wordmark vc-wordmark--white" style="font-size:1.25rem;">VITAL&nbsp;CITY</span></div>
+    <div style="background:#394882; padding: var(--vc-space-5); display:flex; align-items:center; justify-content:center;"><span class="vc-wordmark vc-wordmark--white" style="font-size:1.25rem;">VITAL&nbsp;CITY</span></div>
+    <div style="background:#217ebe; padding: var(--vc-space-5); display:flex; align-items:center; justify-content:center;"><span class="vc-wordmark vc-wordmark--white" style="font-size:1.25rem;">VITAL&nbsp;CITY</span></div>
+    <div style="background:#050507; padding: var(--vc-space-5); display:flex; align-items:center; justify-content:center;"><span class="vc-wordmark vc-wordmark--white" style="font-size:1.25rem;">VITAL&nbsp;CITY</span></div>
+  </div>
 </section>
 
 <!-- ============ COLOR ============ -->
@@ -187,6 +241,126 @@
   </div>
   <p class="vc-meta" style="margin-top: var(--vc-space-2); color: var(--vc-charcoal);">Optional minimums shown — anchors may be extended with additional bins as needed.</p>
 
+  <!-- Type on color matrix -->
+  <p class="vc-kicker vc-kicker--muted" style="margin: var(--vc-space-6) 0 var(--vc-space-3);">Type on color</p>
+  <p style="max-width: 64ch; margin: 0 0 var(--vc-space-4);">Black text is the standard, in print and on web. Color text is used sparingly — single words, small kickers, data labels. Check accessibility on every pairing before shipping, especially at thinner weights and small sizes. "More" = use as much as possible; "Less" = use sparingly; blank = don't use.</p>
+  <div style="overflow-x: auto; border: 1px solid var(--vc-border);">
+  <table style="border-collapse: collapse; width: 100%; font-family: var(--vc-font-sans); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;">
+    <thead>
+      <tr>
+        <th style="padding: var(--vc-space-2); background: var(--vc-white); color: var(--vc-charcoal); text-align:left; font-size:0.6875rem;">TEXT ↓ &nbsp;/&nbsp; BG →</th>
+        <th style="width:70px; height:44px; background:#ffffff; border-left: 1px solid var(--vc-border);"></th>
+        <th style="width:70px; background:#050507;"></th>
+        <th style="width:70px; background:#dddddd;"></th>
+        <th style="width:70px; background:#dde44c;"></th>
+        <th style="width:70px; background:#ff7c53;"></th>
+        <th style="width:70px; background:#9b9fbc;"></th>
+        <th style="width:70px; background:#cea9be;"></th>
+        <th style="width:70px; background:#e7466d;"></th>
+        <th style="width:70px; background:#707175;"></th>
+        <th style="width:70px; background:#394882;"></th>
+        <th style="width:70px; background:#217ebe;"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Row: White text -->
+      <tr><td style="background:#ffffff; padding:var(--vc-space-2); border-top: 1px solid var(--vc-border); color: var(--vc-charcoal); font-size:0.6875rem;">White</td>
+        <td></td>
+        <td style="background:#050507; color:#fff; text-align:center;">MORE</td>
+        <td></td><td></td><td></td><td></td><td></td>
+        <td style="background:#e7466d; color:#fff; text-align:center;">MORE</td>
+        <td style="background:#707175; color:#fff; text-align:center;">MORE</td>
+        <td style="background:#394882; color:#fff; text-align:center;">MORE</td>
+        <td style="background:#217ebe; color:#fff; text-align:center;">MORE</td>
+      </tr>
+      <!-- Row: Black text -->
+      <tr><td style="background:#050507; padding:var(--vc-space-2); border-top: 1px solid var(--vc-border); color:#fff; font-size:0.6875rem;">Black</td>
+        <td style="background:#fff; color:#050507; text-align:center;">MORE</td>
+        <td></td>
+        <td style="background:#dddddd; color:#050507; text-align:center;">MORE</td>
+        <td style="background:#dde44c; color:#050507; text-align:center;">MORE</td>
+        <td style="background:#ff7c53; color:#050507; text-align:center;">MORE</td>
+        <td style="background:#9b9fbc; color:#050507; text-align:center;">MORE</td>
+        <td style="background:#cea9be; color:#050507; text-align:center;">MORE</td>
+        <td style="background:#e7466d; color:#050507; text-align:center;">MORE</td>
+        <td></td><td></td><td></td>
+      </tr>
+      <!-- Row: Cloud text -->
+      <tr><td style="background:#dddddd; padding:var(--vc-space-2); border-top: 1px solid var(--vc-border); color:#050507; font-size:0.6875rem;">Cloud</td>
+        <td></td>
+        <td style="background:#050507; color:#dddddd; text-align:center;">LESS</td>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <!-- Row: Chartreuse text -->
+      <tr><td style="background:#dde44c; padding:var(--vc-space-2); border-top: 1px solid var(--vc-border); color:#050507; font-size:0.6875rem;">Chartreuse</td>
+        <td></td>
+        <td style="background:#050507; color:#dde44c; text-align:center;">LESS</td>
+        <td></td><td></td>
+        <td style="background:#ff7c53; color:#dde44c; text-align:center;">LESS</td>
+        <td style="background:#9b9fbc; color:#dde44c; text-align:center;">LESS</td>
+        <td style="background:#cea9be; color:#dde44c; text-align:center;">LESS</td>
+        <td style="background:#e7466d; color:#dde44c; text-align:center;">LESS</td>
+        <td style="background:#707175; color:#dde44c; text-align:center;">LESS</td>
+        <td style="background:#394882; color:#dde44c; text-align:center;">LESS</td>
+        <td style="background:#217ebe; color:#dde44c; text-align:center;">LESS</td>
+      </tr>
+      <!-- Row: Safety Orange text -->
+      <tr><td style="background:#ff7c53; padding:var(--vc-space-2); border-top: 1px solid var(--vc-border); color:#050507; font-size:0.6875rem;">Safety Orange</td>
+        <td style="background:#fff; color:#ff7c53; text-align:center;">LESS</td>
+        <td style="background:#050507; color:#ff7c53; text-align:center;">LESS</td>
+        <td style="background:#dddddd; color:#ff7c53; text-align:center;">LESS</td>
+        <td style="background:#dde44c; color:#ff7c53; text-align:center;">LESS</td>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <!-- Row: Periwinkle text -->
+      <tr><td style="background:#9b9fbc; padding:var(--vc-space-2); border-top: 1px solid var(--vc-border); color:#050507; font-size:0.6875rem;">Periwinkle</td>
+        <td style="background:#fff; color:#9b9fbc; text-align:center;">LESS</td>
+        <td style="background:#050507; color:#9b9fbc; text-align:center;">LESS</td>
+        <td style="background:#dddddd; color:#9b9fbc; text-align:center;">LESS</td>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <!-- Row: Rose text -->
+      <tr><td style="background:#cea9be; padding:var(--vc-space-2); border-top: 1px solid var(--vc-border); color:#050507; font-size:0.6875rem;">Rose</td>
+        <td style="background:#fff; color:#cea9be; text-align:center;">LESS</td>
+        <td style="background:#050507; color:#cea9be; text-align:center;">LESS</td>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <!-- Row: Magenta text -->
+      <tr><td style="background:#e7466d; padding:var(--vc-space-2); border-top: 1px solid var(--vc-border); color:#fff; font-size:0.6875rem;">Magenta</td>
+        <td style="background:#fff; color:#e7466d; text-align:center;">LESS</td>
+        <td style="background:#050507; color:#e7466d; text-align:center;">LESS</td>
+        <td style="background:#dddddd; color:#e7466d; text-align:center;">LESS</td>
+        <td style="background:#dde44c; color:#e7466d; text-align:center;">LESS</td>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <!-- Row: Charcoal text -->
+      <tr><td style="background:#707175; padding:var(--vc-space-2); border-top: 1px solid var(--vc-border); color:#fff; font-size:0.6875rem;">Charcoal</td>
+        <td style="background:#fff; color:#707175; text-align:center;">LESS</td>
+        <td></td>
+        <td style="background:#dddddd; color:#707175; text-align:center;">LESS</td>
+        <td style="background:#dde44c; color:#707175; text-align:center;">LESS</td>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <!-- Row: Indigo text -->
+      <tr><td style="background:#394882; padding:var(--vc-space-2); border-top: 1px solid var(--vc-border); color:#fff; font-size:0.6875rem;">Indigo</td>
+        <td style="background:#fff; color:#394882; text-align:center;">LESS</td>
+        <td></td>
+        <td style="background:#dddddd; color:#394882; text-align:center;">LESS</td>
+        <td style="background:#dde44c; color:#394882; text-align:center;">LESS</td>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <!-- Row: Cerulean text -->
+      <tr><td style="background:#217ebe; padding:var(--vc-space-2); border-top: 1px solid var(--vc-border); color:#fff; font-size:0.6875rem;">Cerulean</td>
+        <td style="background:#fff; color:#217ebe; text-align:center;">LESS</td>
+        <td></td>
+        <td style="background:#dddddd; color:#217ebe; text-align:center;">LESS</td>
+        <td style="background:#dde44c; color:#217ebe; text-align:center;">LESS</td>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
   <div style="background: var(--vc-black); color: var(--vc-white); padding: var(--vc-space-6); margin-top: var(--vc-space-6);">
     <p class="vc-kicker vc-kicker--white">Role</p>
     <ul style="list-style:none; padding:0; display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--vc-space-3); margin: var(--vc-space-3) 0 0;">
@@ -234,6 +408,57 @@
     <div><span class="vc-meta">H2</span><p class="vc-h2" style="margin:0.25rem 0 0;">A reduction that lags the nation</p></div>
     <div><span class="vc-meta">Dek · Halyard Light</span><p class="vc-dek" style="margin:0.25rem 0 0;">Percent change in murder rates between 2019 and 2025*</p></div>
     <div><span class="vc-meta">Kicker · Halyard Bold caps</span><p class="vc-kicker" style="margin:0.25rem 0 0;">Crime · City Planning · Homelessness</p></div>
+  </div>
+</section>
+
+<!-- ============ ARTICLE TYPE SCHEME ============ -->
+<section id="article-type">
+  <div class="vc-section-head">
+    <h2 class="vc-section-head__title">Article type scheme</h2>
+    <a class="vc-section-head__link" href="https://vitalcitynyc.org" target="_blank" rel="noopener">vitalcitynyc.org →</a>
+  </div>
+  <hr class="vc-hairline">
+  <p style="max-width: 60ch; margin-bottom: var(--vc-space-6); color: var(--vc-charcoal);">
+    The living reference for article pages is the website itself — these classes mirror what <strong>vitalcitynyc.org</strong> actually ships.
+    Display headlines use <strong>halyard-display</strong> (medium 500); body copy uses <strong>halyard-text</strong> (book 300).
+    Gascogne at weight 200 is reserved for pullquotes and the occasional serif break. When the site updates, defer to the site, not this page.
+  </p>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--vc-space-7);">
+    <div>
+      <p class="vc-kicker vc-kicker--muted" style="margin-bottom: var(--vc-space-4);">Live example</p>
+      <article class="vc-article">
+        <p class="vc-article__kicker">Criminal justice</p>
+        <h1 class="vc-article__h1">To prioritize pedestrians, we need to walk the walk</h1>
+        <p class="vc-article__dek">A decade after Vision Zero, the city still spends more on parking enforcement than on the sidewalks people actually use.</p>
+        <p class="vc-article__byline">By Jane Doe · April 22, 2026</p>
+        <p class="vc-article__body">Body copy is halyard-text book (300) at roughly 17px with a 1.6 line height. It sits comfortably alongside charts and photography and leaves the serif for deliberate moments.</p>
+        <h2 class="vc-article__h2">A reduction that lags the nation</h2>
+        <p class="vc-article__body">Subheads are halyard-display medium (500). The display family lends just enough weight to carry at larger sizes without feeling blocky.</p>
+        <blockquote class="vc-article__blockquote">
+          The hairline rule is Safety Orange, 1.5px — the single place where the brand pop earns a full appearance in running text.
+        </blockquote>
+        <p class="vc-article__body">Back to body. Short paragraphs. Evidence-led sentences. No vibes-only voice.</p>
+      </article>
+    </div>
+
+    <div>
+      <p class="vc-kicker vc-kicker--muted" style="margin-bottom: var(--vc-space-4);">Class reference</p>
+      <div style="display:flex; flex-direction:column; gap: var(--vc-space-4); font-size: 0.9rem;">
+        <div><code>.vc-article__kicker</code> — halyard-text 700, 12px, tracked caps, Safety Orange</div>
+        <div><code>.vc-article__h1</code> — halyard-display 500, clamp(32–52px), line-height 1.08</div>
+        <div><code>.vc-article__dek</code> — halyard-text 200, clamp(18–22px), charcoal</div>
+        <div><code>.vc-article__byline</code> — halyard-text 700, 13px, tracked caps</div>
+        <div><code>.vc-article__h2</code> — halyard-display 500, clamp(24–30px)</div>
+        <div><code>.vc-article__h3</code> — halyard-text 700, 18px</div>
+        <div><code>.vc-article__body</code> — halyard-text 300, 17px / 1.6</div>
+        <div><code>.vc-article__display-serif</code> — Gascogne 200 italic — pullquotes, occasional deks</div>
+        <div><code>.vc-article__blockquote</code> — Gascogne 200 italic, 1.5px Safety Orange left rule</div>
+      </div>
+      <p style="margin-top: var(--vc-space-6); font-size: 0.85rem; color: var(--vc-charcoal);">
+        <strong>Font loading:</strong> this page now pulls the site's Typekit kit <code>nlh6iak</code>, which ships <code>halyard-display</code>, <code>halyard-text</code>, and <code>atlas-grotesk</code>. If you embed these classes in a project using the older <code>qqk2vto</code> kit, the display family falls back to <code>halyard-text</code> gracefully.
+      </p>
+    </div>
   </div>
 </section>
 
@@ -449,7 +674,7 @@
 <footer class="vc-footer">
   <div class="vc-footer__grid">
     <div>
-      <img class="vc-footer__wordmark" src="assets/vc-logo-black.png" alt="Vital City">
+      <span class="vc-wordmark vc-wordmark--white" style="font-size: 1.5rem;">VITAL&nbsp;CITY</span>
       <p class="vc-gascogne" style="font-size:1.1rem; margin-top: var(--vc-space-3);">Civil conversation. Enlightening data. New ideas.</p>
     </div>
     <div class="vc-footer__col">

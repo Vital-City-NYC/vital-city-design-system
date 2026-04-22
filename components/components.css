@@ -142,8 +142,42 @@ hr.vc-rule {
   border-bottom: var(--vc-rule-thin) solid var(--vc-border);
   background: var(--vc-white);
 }
-.vc-nav__wordmark { flex: 0 0 auto; }
+.vc-nav__wordmark { flex: 0 0 auto; text-decoration: none; color: inherit; }
 .vc-nav__wordmark img { height: 28px; width: auto; }
+
+/*
+ * Text wordmark — typeset in Halyard Black, all caps, tight tracking.
+ * Bayard (Vocal Type) is the canonical wordmark typeface but is not available
+ * as a licensed web font; the live site ships it as a raster image. For web
+ * uses where a real text wordmark is preferred (accessibility, dark-mode
+ * recoloring, dynamic sizing), this Halyard-based wordmark reads as "in
+ * system" and degrades cleanly. Preserve the space between VITAL and CITY.
+ */
+.vc-wordmark {
+  font-family: var(--vc-font-sans);
+  font-weight: var(--vc-weight-black);
+  font-size: 1.125rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1;
+  white-space: nowrap;
+  color: var(--vc-black);
+  text-decoration: none;
+}
+.vc-wordmark--large  { font-size: 2rem; letter-spacing: 0.1em; }
+.vc-wordmark--xl     { font-size: clamp(2.5rem, 5vw, 4.5rem); letter-spacing: 0.1em; }
+.vc-wordmark--white  { color: var(--vc-white); }
+.vc-wordmark--stacked {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 0.95;
+  letter-spacing: 0.1em;
+}
+.vc-wordmark--vertical {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  letter-spacing: 0.1em;
+}
 .vc-nav__tagline {
   font-family: var(--vc-font-serif);
   font-weight: var(--vc-weight-light);
@@ -405,4 +439,89 @@ hr.vc-rule {
   padding-left: 6px;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
+}
+
+/* ====== Article type scheme (mirrors vitalcitynyc.org) ====== */
+.vc-article {
+  font-family: "halyard-text", var(--vc-font-sans);
+  color: var(--vc-black);
+  max-width: 38rem;
+}
+.vc-article__kicker {
+  font-family: "halyard-text", var(--vc-font-sans);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--vc-orange);
+  margin: 0 0 var(--vc-space-3);
+}
+.vc-article__h1 {
+  font-family: "halyard-display", "halyard-text", var(--vc-font-sans);
+  font-weight: 500;
+  font-size: clamp(2rem, 4.2vw, 3.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  font-synthesis: none;
+  margin: 0 0 var(--vc-space-4);
+}
+.vc-article__dek {
+  font-family: "halyard-text", var(--vc-font-sans);
+  font-weight: 200;
+  font-size: clamp(1.125rem, 1.6vw, 1.375rem);
+  line-height: 1.45;
+  color: var(--vc-charcoal);
+  margin: 0 0 var(--vc-space-6);
+}
+.vc-article__byline {
+  font-family: "halyard-text", var(--vc-font-sans);
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--vc-black);
+  margin: 0 0 var(--vc-space-5);
+}
+.vc-article__h2 {
+  font-family: "halyard-display", "halyard-text", var(--vc-font-sans);
+  font-weight: 500;
+  font-size: clamp(1.5rem, 2.4vw, 1.875rem);
+  line-height: 1.15;
+  font-synthesis: none;
+  margin: var(--vc-space-7) 0 var(--vc-space-3);
+}
+.vc-article__h3 {
+  font-family: "halyard-text", var(--vc-font-sans);
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  margin: var(--vc-space-6) 0 var(--vc-space-2);
+}
+.vc-article__body {
+  font-family: "halyard-text", var(--vc-font-sans);
+  font-weight: 300;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  margin: 0 0 var(--vc-space-4);
+}
+.vc-article__display-serif {
+  font-family: var(--vc-font-serif);
+  font-weight: 200;
+  font-style: italic;
+  font-synthesis: none;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  line-height: 1.3;
+  letter-spacing: -0.003em;
+}
+.vc-article__blockquote {
+  border-left: 1.5px solid var(--vc-orange);
+  padding: var(--vc-space-1) 0 var(--vc-space-1) var(--vc-space-4);
+  margin: var(--vc-space-5) 0;
+  font-family: var(--vc-font-serif);
+  font-weight: 200;
+  font-style: italic;
+  font-synthesis: none;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: var(--vc-black);
 }
