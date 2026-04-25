@@ -27,6 +27,7 @@ Open [`index.html`](index.html) for the living style guide — every token, comp
 | [`charts/vega-lite-theme.json`](charts/vega-lite-theme.json) | Drop-in Vega-Lite config |
 | [`flourish/vital-city.flourish-theme.json`](flourish/vital-city.flourish-theme.json) | Flourish settings (paste into any viz's Preview → Settings) |
 | [`docs/BRAND.md`](docs/BRAND.md) | Brand DNA, color, typography, photography, illustration |
+| [`docs/WEB-DESIGN.md`](docs/WEB-DESIGN.md) | Engineering reference for the live website — actual tokens, component recipes, dos/don'ts |
 | [`docs/VOICE.md`](docs/VOICE.md) | Editorial voice, what we publish, pitch guidance |
 | [`docs/STYLEBOOK.md`](docs/STYLEBOOK.md) | AP-adjacent style entries A–Z |
 | [`docs/DATA-VIZ.md`](docs/DATA-VIZ.md) | Chart conventions — headlines, annotation, Flourish specifics |
