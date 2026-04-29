@@ -16,6 +16,8 @@ Vital City's data viz is a core brand expression. Charts should feel like they b
 - Set in **Halyard Black**, sentence case.
 - Black text on white background.
 - Can be long (2+ lines). Favor clarity over brevity.
+- **Sans only — never Gascogne.** Gascogne serif is for article display headlines and section heads. Charts, tables, and infographic cards lead with bold sans Halyard.
+- **No kicker above the headline.** Do not place an orange uppercase tag ("LABOR HISTORY", "EDUCATION POLICY", etc.) above a chart headline — and no flanking rules or decorative bars. The chart card leads directly with the headline. Kickers belong on article pages, section heads, and event invites — not on data-viz cards.
 
 ## Subtitles / deks
 
