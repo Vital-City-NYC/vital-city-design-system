@@ -2,6 +2,44 @@
 
 Vital City's data viz is a core brand expression. Charts should feel like they belong in an urbane, confident publication — **clean enough to scan fast, rich enough to reward close reading**.
 
+## Visual consistency across formats
+
+Vital City publishes data viz in several formats — Flourish embeds, custom HTML/CSS infographics, Vega-Lite/D3/Plot charts, static PNGs for print and social. **They should all look like they came from the same publication.** A reader skimming the site shouldn't be able to tell which tool produced which chart.
+
+**Flourish is the visual reference standard.** When you build an infographic in any other tool, the default goal is to match the appearance of a Flourish chart styled with our [theme JSON](../flourish/vital-city.flourish-theme.json). That means, by default:
+
+- **Typography:** Halyard (Atlas Grotesk in Flourish) — bold sans for titles, light/book for deks and ticks. Sentence case throughout. Never Gascogne.
+- **Color:** the [11-color categorical palette](#full-categorical-order-matches-flourish) in the documented order. Series 1 = Safety Orange unless NYC is the focal subject (then Magenta).
+- **Anatomy:** white background, horizontal gridlines only at `#dddddd`, axis labels in Charcoal, direct data labels preferred, source line at bottom-left with hyperlinked dataset names.
+- **No kicker, no decorative bars, no Gascogne.** The card leads with the headline.
+- **Logo:** omit on inline web embeds; include only on standalone exports where it renders ≥ 24px tall.
+
+### When divergence is allowed
+
+Custom-built infographics may diverge from Flourish output, but only along these documented axes — and only when the deviation buys something Flourish can't do:
+
+| Axis | Allowed divergence | What still must match |
+|---|---|---|
+| **Interactivity** | Hover states, toggles, scroll-driven reveals, filters, animation. | Resting visual state must match Flourish: same colors, type, gridlines, source line. |
+| **Layout** | Multi-panel composites, side-by-side comparisons, custom legends, embedded annotations. | Each panel still uses the standard palette, type, gridlines, and source treatment. |
+| **Chart types Flourish can't render well** | Custom maps, sankey variants, dense small-multiples, network diagrams, scrollytelling. | Color palette, type stack, gridline weight/color, source line, methodology disclosure. |
+| **Embed surface** | Stripping the outer card chrome (border, shadow, background) when sitting inside a host article so the chart is flush with the surface. | The card's interior — headline, dek, chart, source line — is unchanged. |
+| **Print / social** | Larger logo, fixed dimensions, denser annotation. | Palette, type, source citation. |
+
+If a project needs to diverge in a way not on this list, document the new axis here before shipping — divergence is one-time only when undocumented; once it's a pattern, it's a rule.
+
+### Pre-ship checklist
+
+Before publishing any infographic in any tool, confirm:
+
+- [ ] Title is in Halyard (or Atlas Grotesk in Flourish), sentence case, opinionated.
+- [ ] Colors match the categorical order; focal series follows the NYC-as-focal rule.
+- [ ] Background is white; gridlines are horizontal only, `#dddddd`, 1px.
+- [ ] Source line appears bottom-left with hyperlinked dataset names.
+- [ ] No kicker, no flanking rules, no Gascogne in the chart.
+- [ ] Logo handled per the size rule (omit if < 24px; never as a black bar).
+- [ ] If the chart is interactive or custom, its resting state still passes the visual test against a Flourish chart of the same type.
+
 ## Headlines
 
 **Opinionated and analytical**, not descriptive labels. The headline should tell the reader what the data means.
