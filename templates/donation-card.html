@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donation card template · Vital City</title>
+
+<!--
+  Donation card template (Donorbox + Ghost)
+  -----------------------------------------
+  Pattern: Chartreuse flood background · short pitch in Halyard Book with a **bold**
+  closing line · centered Donorbox web-component donation form.
+
+  Drop-in for a Ghost HTML card at the foot of an article ("support our work" CTA).
+  The whole block below the preview wrapper is self-contained — hardcoded brand hex
+  so it works pasted into Ghost without tokens.css. Token equivalents:
+    background #dde44c = --vc-chartreuse
+    text       #050507 = --vc-black
+    font "halyard-text" = --font-primary (Book 300 body, Bold 700 emphasis)
+
+  TO USE IN GHOST: copy everything between the BEGIN/END markers into one HTML card,
+  then swap the `campaign` attribute for the live Donorbox campaign slug.
+
+  Note: the Donorbox <dbox-widget> is fluid; wrapping it in .vc-donate-card__form
+  (max-width + margin auto) is what keeps the form centered inside the card — the
+  default widget falls to the left in a wide container.
+-->
+
+<style>
+  body { margin: 0; background: #e9ebe3; padding: 32px; font-family: sans-serif; }
+  .preview { max-width: 700px; margin: 0 auto; } /* mimics VC 700px article column */
+</style>
+
+<div class="preview">
+
+<!-- ===== BEGIN Ghost HTML card ===== -->
+<link rel="stylesheet" href="https://use.typekit.net/qqk2vto.css">
+
+<style>
+  .vc-donate-card {
+    background: #dde44c; /* --vc-chartreuse */
+    padding: 44px 40px;
+    box-sizing: border-box;
+    font-family: "halyard-text", "Inter", "Helvetica Neue", Arial, sans-serif;
+  }
+  .vc-donate-card__pitch {
+    color: #050507; /* --vc-black */
+    font-size: 21px;
+    line-height: 1.5;
+    font-weight: 300; /* Halyard Book */
+    max-width: 600px;
+    margin: 0 auto 32px;
+  }
+  .vc-donate-card__pitch strong { font-weight: 700; } /* Halyard Bold */
+  .vc-donate-card__form {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  @media (max-width: 600px) {
+    .vc-donate-card { padding: 28px 22px; }
+    .vc-donate-card__pitch { font-size: 18px; }
+  }
+</style>
+
+<div class="vc-donate-card">
+  <p class="vc-donate-card__pitch">
+    The article you just read took hours of research, editing and careful analysis. That costs money. Your gift will help Vital City expand our operational capacity and publish more of the practical policy ideas that are cited by decision-makers, used in college classrooms and referenced on the campaign trail. <strong>Please support our work.</strong>
+  </p>
+
+  <div class="vc-donate-card__form">
+    <script type="module" src="https://donorbox.org/widgets.js" async></script>
+    <dbox-widget
+      campaign="support-vital-city-spring-2026"
+      type="donation_form"
+      enable-auto-scroll="true">
+    </dbox-widget>
+  </div>
+</div>
+<!-- ===== END Ghost HTML card ===== -->
+
+</div>
+</body>
+</html>
