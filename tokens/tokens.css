@@ -77,7 +77,7 @@
   --vc-border: var(--vc-cloud);
   --vc-rule: var(--vc-black);
   --vc-accent: var(--vc-orange);         /* CTAs, kickers, trend lines */
-  --vc-pop: var(--vc-chartreuse);        /* drop shadows, chart fills, rare single-word accent — sparing */
+  --vc-pop: var(--vc-chartreuse);        /* chart fills, rare single-word accent — sparing */
   --vc-focal: var(--vc-magenta);         /* subject-of-analysis highlight */
   --vc-compare: var(--vc-cerulean);      /* comparison group */
 
@@ -128,8 +128,6 @@
 
   --vc-radius-pill: 999px;                /* the DONATE button style */
   --vc-radius: 0;                          /* default: no rounding — architectural */
-
-  --vc-shadow-pop: 4px 4px 0 var(--vc-chartreuse);  /* print-style drop shadow pop */
 
   /* ---------- Chart-specific tokens (match Flourish settings) ---------- */
   --vc-chart-grid: var(--vc-cloud);

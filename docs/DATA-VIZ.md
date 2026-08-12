@@ -51,7 +51,7 @@ Before publishing any infographic in any tool, confirm:
 | Felony assaults increased for the sixth year in a row, but total assaults fell 1.8% in 2025 | Assault Trends 2019-2025 |
 | Total offenses are at their highest level in two decades | Total Offenses Over Time |
 
-- Set in **Halyard Black**, sentence case.
+- Set in **Halyard Black (weight 900)**, sentence case. Do not drop to 700 — settled 12 August 2026.
 - Black text on white background.
 - Can be long (2+ lines). Favor clarity over brevity.
 - **Sans only — never Gascogne.** Gascogne serif is for article display headlines and section heads. Charts, tables, and infographic cards lead with bold sans Halyard.

@@ -50,7 +50,7 @@ See [`tokens/tokens.css`](../tokens/tokens.css) for every hex and tint.
 
 - **Black text is standard** — in print and on web. Color text is used sparingly for accents only.
 - **Safety Orange** appears in the nav rail and footer, occasional CTAs, category kickers, and as a trend-line color in data viz.
-- **Chartreuse** is a purposeful pop — drop shadows, primary bar fills, and at most one single-word accent per page. Avoid decorative underlines; the brand has moved away from them.
+- **Chartreuse** is a purposeful pop — primary bar fills and at most one single-word accent per page. Avoid decorative underlines; the brand has moved away from them.
 - **Magenta** highlights the subject of analysis (e.g., NYC in a city comparison).
 - **Cerulean** is the comparison group.
 - Check accessibility for text on color, especially at thin weights.
@@ -114,4 +114,4 @@ Erudite serif by TypeShop Collection. Self-hosted TTF at `fonts/GascogneTS-Light
 
 - **Hairlines** and thin rules to structure layouts.
 - **Black strokes** on photos for print.
-- **Chartreuse drop shadows** behind photos in print. Chartreuse accents on web are rare — one single-word highlight per page at most; avoid highlighter-style underlines.
+- **Chartreuse accents** are rare — one single-word highlight per page at most; avoid highlighter-style underlines and drop shadows.

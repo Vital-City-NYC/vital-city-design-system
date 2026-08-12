@@ -297,7 +297,7 @@ Tiny, top-of-page strip for announcements. Only chartreuse-on-black or black-on-
 
 ## 7. Things to avoid in new web work
 
-- **No drop shadows.** The brand allows one — the site uses zero in chrome. Reserve for chart hover states only.
+- **No drop shadows.** Reserve for chart hover states only.
 - **No rounded corners** on buttons, cards, or section dividers unless you have a specific reason (e.g., a phone-screen mock-up). `--global-radius` defaults to `0`.
 - **No body copy in Gascogne.** Pullquotes and blockquotes only. Never paragraph runs.
 - **No `#000` for body text.** Use `#262626` (`--color-dark`) — pure black is reserved for the wordmark and one or two display moments.
