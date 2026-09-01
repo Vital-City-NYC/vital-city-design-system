@@ -31,6 +31,17 @@
   background: var(--chart-bg);
 }
 
+/* Bordered card wrapper for an embeddable chart figure. Reference
+ * implementation: parks-capital-graphics (Sept 2026). No logo and no
+ * "VITAL CITY" text stamp inside the card — attribution belongs in the
+ * source line. In an iframe embed (?embed=1), strip this border on the
+ * page side and let the host wrapper draw the single border. */
+.vc-chart--card {
+  border: 1px solid #050507;
+  background: #fff;
+  padding: 1.4rem 1.4rem 1.1rem;
+}
+
 .vc-chart__title {
   font-family: var(--vc-font-sans, "halyard-text", sans-serif);
   font-weight: 900;

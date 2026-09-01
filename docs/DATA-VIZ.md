@@ -52,6 +52,7 @@ Before publishing any infographic in any tool, confirm:
 | Total offenses are at their highest level in two decades | Total Offenses Over Time |
 
 - Set in **Halyard Black (weight 900)**, sentence case. Do not drop to 700 — settled 12 August 2026.
+- **The family is `halyard-text`, never `halyard-display`** — settled 1 September 2026 (parks-capital-graphics). The display cut reads far too heavy at chart-card sizes, and the Typekit kit carries no display 800, so an 800 declaration silently snaps to Display Black. Use `.vc-chart__title` from `charts/chart-theme.css` (halyard-text 900, 1.25rem) rather than restating the values.
 - Black text on white background.
 - Can be long (2+ lines). Favor clarity over brevity.
 - **Sans only — never Gascogne.** Gascogne serif is for article display headlines and section heads. Charts, tables, and infographic cards lead with bold sans Halyard.
@@ -70,7 +71,7 @@ Before publishing any infographic in any tool, confirm:
 - **Direct data labels** on bars, lines and points preferred over relying solely on axes.
 - **Axis labels** in Charcoal, small Halyard Book.
 - **Source line** at bottom-left. "Source:" followed by hyperlinked dataset names (underlined). Include methodological notes inline — "2025 is year-to-date through 12/07", "*This end-of-year projection assumes the rate of decline…"
-- **VITAL CITY logo** at bottom-right — only on standalone chart exports where it will render at ≥ 24px tall. Do NOT place the logo in inline HTML source lines or at sizes below 20px, where it becomes an unreadable black bar. For web-based visualizations, omit the logo from individual charts; a single logo in the page footer is sufficient.
+- **VITAL CITY logo** at bottom-right — only on standalone chart exports where it will render at ≥ 24px tall. Do NOT place the logo in inline HTML source lines or at sizes below 20px, where it becomes an unreadable black bar. For web-based visualizations, omit the logo from individual charts; a single logo in the page footer is sufficient. The same goes for a letterspaced "VITAL CITY" text stamp in a card corner — don't (settled 1 September 2026). Chart cards carry no mark at all; attribution lives in the source line and the host page.
 
 ## Color assignment conventions
 
