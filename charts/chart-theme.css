@@ -145,6 +145,13 @@
 .vc-chart__table .vc-chart__label { font-weight: 700; }
 .vc-chart__table .vc-chart__label a { color: var(--chart-fg); }
 
+/* Short categorical and currency cells (borough, year, $1.4M) should not wrap
+ * mid-value — only the name column is allowed to run to a second line. */
+.vc-chart__table .vc-chart__nowrap { white-space: nowrap; }
+@media (max-width: 560px) {
+  .vc-chart__table .vc-chart__nowrap { white-space: normal; }
+}
+
 /* Inline status badge inside a table cell. Orange = in progress / caveat. */
 .vc-chart__tag {
   display: inline-block;
