@@ -120,14 +120,19 @@ Every chart panel obeys [`INFOGRAPHICS.md`](INFOGRAPHICS.md). Two additional rul
 if (new URLSearchParams(location.search).get('embed') === '1') {
   document.body.classList.add('embed');
   const postHeight = () => {
-    const h = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);
-    parent.postMessage({ type: 'vc-embed-height', id: '<SLUG>', height: h }, '*');
+    // Measure the CONTENT element, never document/body scrollHeight — see below.
+    const el = document.querySelector('.card');   // the page's outer content wrapper
+    if (!el || innerWidth < 50) return;           // skip 0-width prerender states
+    const h = Math.ceil(el.getBoundingClientRect().height);
+    if (h > 0) parent.postMessage({ type: 'vc-embed-height', id: '<SLUG>', height: h }, '*');
   };
   window.addEventListener('load', postHeight);
   window.addEventListener('resize', postHeight);
   let n = 0; const t = setInterval(() => { postHeight(); if (++n > 20) clearInterval(t); }, 300);
 }
 ```
+
+**Measure the content element, not the document** — corrected 1 September 2026 after `parks-capital-graphics` shipped iframes stuck at 2,125px for a 420px chart. `document.documentElement.scrollHeight` never reports less than the iframe's current viewport height, so the measurement can only ratchet upward: one transient spike (a zero-width prerender, a font swap, a phone rotation) locks in the tallest height the frame ever had, and because the parent then sizes the iframe to that number, the next measurement confirms it. Measuring the content wrapper's own `getBoundingClientRect().height` shrinks correctly as well as grows. Guard on `innerWidth` too — a hidden or prerendering frame reports zero width and produces a garbage height.
 
 ```css
 body.embed{padding:0;}

@@ -42,6 +42,10 @@
   padding: 1.4rem 1.4rem 1.1rem;
 }
 
+/* Headline. The family is halyard-text, NOT halyard-display: the display cut
+ * reads far too heavy at card sizes, and the Typekit kit carries no display
+ * 800, so an 800 declaration silently snaps to Display Black. Weight 900 here
+ * is halyard-text Black, which is the intended face. */
 .vc-chart__title {
   font-family: var(--vc-font-sans, "halyard-text", sans-serif);
   font-weight: 900;
@@ -86,3 +90,83 @@
 .vc-chart-bar--base { fill: #dde44c; }      /* chartreuse default */
 .vc-chart-line--trend { stroke: #ff7c53; stroke-width: 2; fill: none; }
 .vc-chart-label--trend { fill: #ff7c53; font-weight: 700; }
+
+/* ---------------------------------------------------------------------------
+ * Table figure — a ranked table that is a chart, not a layout table.
+ * It takes the same card, headline, dek and source line as any other figure.
+ * Reference implementation: parks-capital-graphics fig4 / fig5 (Sept 2026).
+ * ------------------------------------------------------------------------- */
+
+.vc-chart__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.vc-chart__table th,
+.vc-chart__table td {
+  padding: 0.55rem 0.6rem;
+  border-bottom: 1px solid var(--chart-grid);
+  text-align: left;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  vertical-align: top;
+}
+
+/* Header row is a black band — the table's equivalent of an axis. */
+.vc-chart__table th {
+  background: var(--chart-fg);
+  color: #fff;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.vc-chart__table tbody tr:last-child td { border-bottom: 0; }
+
+/* The ranked metric column: the one sanctioned use of Gascogne in a table,
+ * matching the big-numeral rule. Right-aligned so the digits line up. */
+.vc-chart__table .vc-chart__metric,
+.vc-chart__table th.vc-chart__metric {
+  font-family: var(--vc-font-serif, "GascogneTS", Georgia, serif);
+  font-weight: 300;
+  font-size: 1.15rem;
+  white-space: nowrap;
+  text-align: right;
+  color: var(--chart-fg);
+}
+.vc-chart__table th.vc-chart__metric {
+  font-family: var(--vc-font-sans, "halyard-text", sans-serif);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #fff;
+}
+/* Magenta when the metric is the bad news (slip, overrun, delay). */
+.vc-chart__table .vc-chart__metric--negative { color: #e7466d; }
+
+.vc-chart__table .vc-chart__label { font-weight: 700; }
+.vc-chart__table .vc-chart__label a { color: var(--chart-fg); }
+
+/* Inline status badge inside a table cell. Orange = in progress / caveat. */
+.vc-chart__tag {
+  display: inline-block;
+  border: 1px solid var(--chart-fg);
+  background: var(--chart-c1);
+  padding: 1px 5px;
+  margin-left: 0.4rem;
+  font-family: var(--vc-font-sans, "halyard-text", sans-serif);
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--chart-fg);
+  white-space: nowrap;
+}
+
+@media (max-width: 560px) {
+  .vc-chart__table th,
+  .vc-chart__table td { padding: 0.5rem 0.45rem; font-size: 0.78rem; }
+  .vc-chart__table .vc-chart__metric { font-size: 1.05rem; }
+}
+
+/* Embed surface: under ?embed=1 the page drops its own border and margins so
+ * the host wrapper draws the single border. See DASHBOARDS.md section 6. */
+body.embed .vc-chart--card { border: none; margin: 0; }

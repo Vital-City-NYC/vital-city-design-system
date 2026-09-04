@@ -87,6 +87,8 @@ These are the actual variables defined in `:root` on the production CSS — not 
 
 The `--font-body` / `--font-headings` tokens default to the system stack, but **virtually every typed element overrides them** to `halyard-text` or `halyard-display`. Treat `var(--font-system)` as a graceful fallback while Typekit loads, not as a target.
 
+**Weights the kit actually ships.** `halyard-text` and `halyard-display` are each served at 100, 200, 300, 400, 500, 600, 700 and 900 — **there is no 800 in either family.** A `font-weight: 800` declaration therefore rounds to 900 and renders Black, heavier than intended, with no error anywhere. Declare 700 or 900 and mean it. Note also that display and text are different cuts, not the same face at different sizes: display is for article and page headlines, while charts and infographics use `halyard-text` (see [`INFOGRAPHICS.md`](INFOGRAPHICS.md) §2).
+
 ### Fluid heading scale
 Headings use `clamp()` everywhere. Numbers are taken straight from the production CSS:
 

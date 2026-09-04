@@ -22,7 +22,7 @@ Custom-built infographics may diverge from Flourish output, but only along these
 |---|---|---|
 | **Interactivity** | Hover states, toggles, scroll-driven reveals, filters, animation. | Resting visual state must match Flourish: same colors, type, gridlines, source line. |
 | **Layout** | Multi-panel composites, side-by-side comparisons, custom legends, embedded annotations. | Each panel still uses the standard palette, type, gridlines, and source treatment. |
-| **Chart types Flourish can't render well** | Custom maps, sankey variants, dense small-multiples, network diagrams, scrollytelling. | Color palette, type stack, gridline weight/color, source line, methodology disclosure. |
+| **Chart types Flourish can't render well** | Custom maps, sankey variants, dense small-multiples, network diagrams, scrollytelling, ranked table figures. | Color palette, type stack, gridline weight/color, source line, methodology disclosure. |
 | **Embed surface** | Stripping the outer card chrome (border, shadow, background) when sitting inside a host article so the chart is flush with the surface. | The card's interior — headline, dek, chart, source line — is unchanged. |
 | **Print / social** | Larger logo, fixed dimensions, denser annotation. | Palette, type, source citation. |
 
@@ -32,7 +32,8 @@ If a project needs to diverge in a way not on this list, document the new axis h
 
 Before publishing any infographic in any tool, confirm:
 
-- [ ] Title is in Halyard (or Atlas Grotesk in Flourish), sentence case, opinionated.
+- [ ] Title is in Halyard `halyard-text` (or Atlas Grotesk in Flourish), sentence case, opinionated.
+- [ ] Title, dek, labels and source line follow [`STYLEBOOK.md`](STYLEBOOK.md) — numerals for 10 and above is the one that bites most often.
 - [ ] Colors match the categorical order; focal series follows the NYC-as-focal rule.
 - [ ] Background is white; gridlines are horizontal only, `#dddddd`, 1px.
 - [ ] Source line appears bottom-left with hyperlinked dataset names.
@@ -55,6 +56,7 @@ Before publishing any infographic in any tool, confirm:
 - **The family is `halyard-text`, never `halyard-display`** — settled 1 September 2026 (parks-capital-graphics). The display cut reads far too heavy at chart-card sizes, and the Typekit kit carries no display 800, so an 800 declaration silently snaps to Display Black. Use `.vc-chart__title` from `charts/chart-theme.css` (halyard-text 900, 1.25rem) rather than restating the values.
 - Black text on white background.
 - Can be long (2+ lines). Favor clarity over brevity.
+- **Follows [`STYLEBOOK.md`](STYLEBOOK.md) like any other line of Vital City copy** — most often the number rules: one through nine spelled out, 10 and above in numerals ("The 10 slowest projects each took eight years or more"), numerals always for percentages, decimals, currency and ages, `%` rather than "percent". Deks, axis labels, annotations and source lines are edited copy too.
 - **Sans only — never Gascogne.** Gascogne serif is for article display headlines and section heads. Charts, tables, and infographic cards lead with bold sans Halyard.
 - **No kicker above the headline.** Do not place an orange uppercase tag ("LABOR HISTORY", "EDUCATION POLICY", etc.) above a chart headline — and no flanking rules or decorative bars. The chart card leads directly with the headline. Kickers belong on article pages, section heads, and event invites — not on data-viz cards.
 
