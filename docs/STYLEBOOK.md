@@ -68,9 +68,10 @@ Notable exceptions: `the war on drugs`, `the war on terror` — neither is an of
 
 ### "City" and "State"
 
-- **Capitalize** `City` / `State` when referring to New York City or State as a governing or administrative body. Lower case when referring to the population or geographic entity. (Contra AP.)
+- **Capitalize** `City` when referring to New York City as a governing or administrative body. Lower case when referring to the population or geographic entity. (Contra AP.)
   - "When the City implemented a citywide policy change, New Yorkers all across the city responded positively."
   - "When the city implemented a citywide policy change, St. Louisans all across the city responded positively."
+- **`state` stays lowercase** in all instances, including New York State's government ("the state budget"), per AP. (Changed Sept. 28, 2026; this previously said to capitalize it.)
 - **New York City** — spell out on first reference unless part of a proper name (NYC Pandemic Response Institute). "New York" acceptable on second reference. "NYC" acceptable in chart footnotes; otherwise avoid.
 
 ### Neighborhoods
