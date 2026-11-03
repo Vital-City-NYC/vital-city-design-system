@@ -87,7 +87,7 @@ These are the actual variables defined in `:root` on the production CSS — not 
 
 The `--font-body` / `--font-headings` tokens default to the system stack, but **virtually every typed element overrides them** to `halyard-text` or `halyard-display`. Treat `var(--font-system)` as a graceful fallback while Typekit loads, not as a target.
 
-**Weights the kit actually ships.** `halyard-text` and `halyard-display` are each served at 100, 200, 300, 400, 500, 600, 700 and 900 — **there is no 800 in either family.** A `font-weight: 800` declaration therefore rounds to 900 and renders Black, heavier than intended, with no error anywhere. Declare 700 or 900 and mean it. Note also that display and text are different cuts, not the same face at different sizes: display is for article and page headlines, while charts and infographics use `halyard-text` (see [`INFOGRAPHICS.md`](INFOGRAPHICS.md) §2).
+**Weights the kit actually ships.** `halyard-text` and `halyard-display` are each served at 100, 200, 300, 400, 500, 600, 700 and 900 — **there is no 800 in either family.** A `font-weight: 800` declaration therefore rounds to 900 and renders Black, heavier than intended, with no error anywhere. Declare 700 or 900. Note also that display and text are different cuts, not the same face at different sizes: display is for article and page headlines, while charts and infographics use `halyard-text` (see [`INFOGRAPHICS.md`](INFOGRAPHICS.md) §2).
 
 ### Fluid heading scale
 Headings use `clamp()` everywhere. Numbers are taken straight from the production CSS:
@@ -237,7 +237,7 @@ blockquote {
   padding: 8px 0 8px 24px;
 }
 ```
-This is the most distinctive in-text component. Use it sparingly — once or twice per article max.
+Use it sparingly — once or twice per article max.
 
 ### 6.5 Figcaption
 ```css
@@ -284,7 +284,7 @@ The site's email-capture form sits at the bottom of the article and at footer. P
 }
 .footer__address { font-size: 15px; line-height: 1.4; opacity: 0.9; }
 ```
-The orange footer is one of the most recognizable parts of the site — keep it. Don't substitute another color in microsites that want to feel native.
+Keep the orange footer. Don't substitute another color in microsites that want to feel native.
 
 ### 6.9 Announcement bar
 ```css
@@ -303,7 +303,7 @@ Tiny, top-of-page strip for announcements. Only chartreuse-on-black or black-on-
 - **No rounded corners** on buttons, cards, or section dividers unless you have a specific reason (e.g., a phone-screen mock-up). `--global-radius` defaults to `0`.
 - **No body copy in Gascogne.** Pullquotes and blockquotes only. Never paragraph runs.
 - **No `#000` for body text.** Use `#262626` (`--color-dark`) — pure black is reserved for the wordmark and one or two display moments.
-- **No fluorescent overrides.** If you find yourself reaching for `#dde44c` as a background block, ask whether the announcement bar pattern (small strip) is what you want instead. Chartreuse-flooded panels read as advertising, not editorial.
+- **No fluorescent overrides.** If you find yourself reaching for `#dde44c` as a background block, ask whether the announcement bar pattern (small strip) is what you want instead. Chartreuse-flooded panels read as advertising.
 - **No mixed-case or italicized "Vital City."** Wordmark is set in Bayard (or the `.vc-wordmark` Halyard fallback) in tracked uppercase, always.
 
 ---
@@ -360,7 +360,7 @@ That's the minimal kit. Add the design-system component classes (`.vc-wordmark`,
 
 ## 9. Audit notes (April 2026)
 
-A few inconsistencies worth flagging when the site next gets touched:
+Inconsistencies to fix when the site next gets touched:
 - Production body color is `#272727` set directly on `body{}`; the token is `#262626`. They look identical — pick one.
 - The Ghost theme variable is misspelled `--brakepoint-*`. New code can use `--breakpoint-*` aliases, but don't rename the existing ones until the theme is rebuilt.
 - The ghost-default brand color `#2375c9` is still the link fallback; the brand spec uses Cerulean `#217ebe`. Two different blues, neither widely visible — worth aligning on one.

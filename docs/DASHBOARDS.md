@@ -141,7 +141,7 @@ body.embed .card{border:none; max-width:none;}
 
 Ghost side: one wrapper div carrying the single 1px black border, an iframe with `scrolling="no"` and a fallback height, and a listener that resizes it on the height message. Put the border on the wrapper, never on the iframe — themes override iframe borders.
 
-Hard-won specifics: never use a fixed `padding-top` aspect ratio for an interactive page (it always crops or leaves whitespace); re-measure height on an interval for a few seconds because maps and charts hydrate after `load`; and never leave borders on both the page and the host.
+Three more rules: never use a fixed `padding-top` aspect ratio for an interactive page (it always crops or leaves whitespace); re-measure height on an interval for a few seconds because maps and charts hydrate after `load`; and never leave borders on both the page and the host.
 
 **Interactive dashboards with unbounded height** — searchable databases where a query can return hundreds of rows — invert the pattern. Under `?embed=1`, turn the page into a fixed-height app frame: slim topbar with the title and an "Open full screen" link that carries the current hash, header and footer hidden, and `main` scrolling internally. The Ghost iframe gets `height: clamp(650px, 85vh, 1100px)` and no postMessage. Also drop `autofocus` from search inputs in embed mode — it scroll-jacks the host article — and preserve `location.search` in any `history.replaceState` call so `?embed=1` survives navigation.
 

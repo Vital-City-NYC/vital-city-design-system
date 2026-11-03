@@ -27,7 +27,7 @@ Gascogne never sets a headline **inside** a chart or infographic. On article and
 
 *Settled 12 August 2026:* **Halyard Black (900) is canonical for chart and infographic headlines.** [`DATA-VIZ.md`](DATA-VIZ.md) and the headline standard have always said so; the reference card implementation (`nyc-water-towers`) shipped its h1 at 700 and is a legacy exception to correct the next time that project is touched. Never mix weights between panels of the same dashboard.
 
-*Settled 1 September 2026:* **the family is `halyard-text`, never `halyard-display`.** "Halyard Black" names a weight, not the display cut — and the display cut reads far too heavy at card sizes. There is a trap behind this: the Typekit kit (`nlh6iak`) carries `halyard-display` at 100–900 but **no 800**, so a `font-weight: 800` declaration on the display family silently snaps to Display Black and lands heavier than anything you asked for. `parks-capital-graphics` shipped that way and had to be corrected. Link `charts/chart-theme.css` and use `.vc-chart__title` rather than restating the values.
+*Settled 1 September 2026:* **the family is `halyard-text`, never `halyard-display`.** "Halyard Black" names a weight, not the display cut — and the display cut reads far too heavy at card sizes. The Typekit kit (`nlh6iak`) carries `halyard-display` at 100–900 but **no 800**, so a `font-weight: 800` declaration on the display family silently snaps to Display Black and lands heavier than anything you asked for. `parks-capital-graphics` shipped that way and had to be corrected. Link `charts/chart-theme.css` and use `.vc-chart__title` rather than restating the values.
 
 ## 3. Headlines are analytical, not descriptive
 
@@ -95,7 +95,7 @@ Do not substitute a Google-Fonts serif for GascogneTS, add `box-shadow`, or roun
 
 ## 5. Table figures
 
-A ranked table is a chart, not a layout device. When the story is "here are the 10 worst," a table beats a bar chart: it carries the names, the borough and the dollar figure alongside the number, and it survives being read on a phone. Build it as a figure with the same card, headline, dek and source line as any other graphic — a table dropped into an article as bare rows reads as raw material, not as a published exhibit.
+A ranked table is a chart, not a layout device. When the story is "here are the 10 worst," a table beats a bar chart: it carries the names, the borough and the dollar figure alongside the number, and it survives being read on a phone. Build it as a figure with the same card, headline, dek and source line as any other graphic — a table dropped into an article as bare rows reads as raw material.
 
 Use `.vc-chart__table` from [`../charts/chart-theme.css`](../charts/chart-theme.css). Reference implementation: `parks-capital-graphics` fig4 and fig5 (September 2026).
 
