@@ -1,0 +1,66 @@
+/* Shared styling for preview cards. Cards are ~700px wide with flexible heights. */
+@import url("../colors_and_type.css");
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: var(--sans);
+  color: var(--fg1);
+  -webkit-font-smoothing: antialiased;
+}
+
+.card {
+  padding: 20px 24px;
+  box-sizing: border-box;
+}
+
+.row { display: flex; gap: 12px; align-items: stretch; }
+.grid { display: grid; gap: 12px; }
+
+.swatch {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 8px 10px;
+  min-height: 92px;
+  color: var(--black);
+}
+.swatch.dark { color: var(--white); }
+.swatch .sw-name {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+.swatch .sw-hex {
+  font-family: var(--chart);
+  font-size: 11px;
+  opacity: .85;
+  margin-top: 2px;
+}
+
+.label {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  margin: 0 0 10px 0;
+}
+
+.hairline {
+  border: 0;
+  border-top: 1px solid var(--black);
+  margin: 12px 0;
+}
+
+code, .mono {
+  font-family: "SF Mono", "Menlo", "Consolas", monospace;
+  font-size: 11px;
+  color: var(--charcoal);
+}

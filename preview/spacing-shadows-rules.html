@@ -1,0 +1,38 @@
+<!doctype html><meta charset="utf-8"><link rel=stylesheet href=_card.css>
+<style>
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center}
+.ex{background:#fff;padding:22px;display:flex;align-items:center;justify-content:center;min-height:120px}
+.popshadow{width:120px;height:80px;background:#fff;border:1px solid #050507}
+.hr{width:100%;border-top:1px solid #050507;border-bottom:0}
+.hr2{border-top:2px solid #050507}
+.dotted{border-left:1.5px dotted #050507;height:68px}
+.lbl{font-family:var(--sans);font-weight:700;font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:#707175;margin-bottom:6px}
+.sub{font-family:var(--chart);font-size:10px;color:#707175;margin-top:4px}
+</style>
+<div class=card style="padding:18px 22px">
+<div class=grid>
+ <div>
+  <div class=lbl>Card edge · no shadow</div>
+  <div class=ex><div class=popshadow></div></div>
+  <div class=sub>1px black border · square corners · no box-shadow</div>
+ </div>
+ <div>
+  <div class=lbl>Hairline · 1px black</div>
+  <div class=ex style="flex-direction:column;align-items:stretch;gap:10px"><hr class=hr><hr class="hr hr2"></div>
+  <div class=sub>1px standard · 2px bold</div>
+ </div>
+</div>
+<hr class=hairline style="border-top:1px solid #eee;margin:14px 0">
+<div class=grid>
+ <div>
+  <div class=lbl>Dotted annotation line</div>
+  <div class=ex><div class=dotted></div></div>
+  <div class=sub>contextual events, rotated tracked-caps</div>
+ </div>
+ <div>
+  <div class=lbl>Vertical rule — co-brand bar</div>
+  <div class=ex><div style="width:1px;height:32px;background:#b9b9ba"></div></div>
+  <div class=sub>1px × 32px · charcoal 50</div>
+ </div>
+</div>
+</div>

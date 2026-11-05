@@ -1,0 +1,26 @@
+<!doctype html><meta charset="utf-8"><link rel=stylesheet href=_card.css>
+<style>
+.grad{height:58px;display:flex}
+.step{flex:1;display:flex;align-items:flex-end;justify-content:center;padding:4px 2px;font-family:var(--chart);font-size:9px;color:#050507}
+.lbl{font-family:var(--sans);font-weight:700;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#707175;margin-bottom:6px}
+</style>
+<div class=card style="padding:18px 22px">
+<div class=lbl>Good → Bad · linear</div>
+<div class=grad style="background:linear-gradient(to right,#dde44c,#ff7c53)"></div>
+<div class=lbl style="margin-top:18px">Good · binned</div>
+<div class=grad>
+ <div class=step style="background:#57aa4a;color:#fff">#57aa4a</div>
+ <div class=step style="background:#7cbf4e">#7cbf4e</div>
+ <div class=step style="background:#9cc456">#9cc456</div>
+ <div class=step style="background:#bdd451">#bdd451</div>
+ <div class=step style="background:#dde44c">#dde44c</div>
+</div>
+<div class=lbl style="margin-top:18px">Bad · binned</div>
+<div class=grad>
+ <div class=step style="background:#ff7c53">#ff7c53</div>
+ <div class=step style="background:#fb693c;color:#fff">#fb693c</div>
+ <div class=step style="background:#ed5236;color:#fff">#ed5236</div>
+ <div class=step style="background:#e03a30;color:#fff">#e03a30</div>
+ <div class=step style="background:#d2232a;color:#fff">#d2232a</div>
+</div>
+</div>

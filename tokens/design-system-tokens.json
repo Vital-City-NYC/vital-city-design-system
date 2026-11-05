@@ -1,0 +1,428 @@
+{
+ "name": "Vital City",
+ "version": 1,
+ "meta": {
+  "source": "Merged export, Nov. 5, 2026: Claude Design project (Oct. 31, 2026) plus github.com/Vital-City-NYC/vital-city-design-system (Nov. 3, 2026). Values from tokens/tokens.css."
+ },
+ "color": {
+  "themes": [
+   {
+    "id": "light",
+    "name": "Light"
+   }
+  ],
+  "tokens": [
+   {
+    "name": "black",
+    "value": "#050507",
+    "usage": "Default text and headlines; 1px card borders and hairline rules."
+   },
+   {
+    "name": "white",
+    "value": "#ffffff",
+    "usage": "Default background, always. Text on black panels."
+   },
+   {
+    "name": "cloud",
+    "value": "#dddddd",
+    "usage": "Hairlines between bands, chart gridlines, alternate background."
+   },
+   {
+    "name": "chartreuse",
+    "value": "#dde44c",
+    "usage": "Pop. Primary bar fill; at most one single-word accent per page. Full flood only on event invites and donation cards."
+   },
+   {
+    "name": "safety-orange",
+    "value": "#ff7c53",
+    "usage": "Accent. CTAs, article kickers, nav hover, trend lines; chart series 1 unless NYC is focal."
+   },
+   {
+    "name": "periwinkle",
+    "value": "#9b9fbc",
+    "usage": "Neutral filler; muted text on black panels."
+   },
+   {
+    "name": "rose",
+    "value": "#cea9be",
+    "usage": "Secondary palette; chart series 5."
+   },
+   {
+    "name": "magenta",
+    "value": "#e7466d",
+    "usage": "Focal. The subject of an analysis, such as NYC in a city comparison."
+   },
+   {
+    "name": "charcoal",
+    "value": "#707175",
+    "usage": "Muted text: deks, axis labels, bylines, source lines."
+   },
+   {
+    "name": "indigo",
+    "value": "#394882",
+    "usage": "Secondary palette; chart series 6."
+   },
+   {
+    "name": "cerulean",
+    "value": "#217ebe",
+    "usage": "Compare. Comparison groups in charts."
+   },
+   {
+    "name": "paper",
+    "value": "#f7f7f4",
+    "usage": "Stats-strip background on infographic cards."
+   },
+   {
+    "name": "chartreuse-80",
+    "value": "#e4e871",
+    "usage": "80% tint of chartreuse, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "chartreuse-50",
+    "value": "#edefa8",
+    "usage": "50% tint of chartreuse, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "chartreuse-20",
+    "value": "#f7f8dd",
+    "usage": "20% tint of chartreuse, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "orange-80",
+    "value": "#f69577",
+    "usage": "80% tint of orange, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "orange-50",
+    "value": "#fabcaa",
+    "usage": "50% tint of orange, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "orange-20",
+    "value": "#fde5dd",
+    "usage": "20% tint of orange, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "periwinkle-80",
+    "value": "#b0b3c9",
+    "usage": "80% tint of periwinkle, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "periwinkle-50",
+    "value": "#cdcfde",
+    "usage": "50% tint of periwinkle, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "periwinkle-20",
+    "value": "#ecebf0",
+    "usage": "20% tint of periwinkle, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "rose-80",
+    "value": "#d7b9cb",
+    "usage": "80% tint of rose, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "rose-50",
+    "value": "#e8d5df",
+    "usage": "50% tint of rose, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "rose-20",
+    "value": "#f5eef2",
+    "usage": "20% tint of rose, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "magenta-80",
+    "value": "#ec6b8a",
+    "usage": "80% tint of magenta, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "magenta-50",
+    "value": "#f3a3b6",
+    "usage": "50% tint of magenta, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "magenta-20",
+    "value": "#fadae2",
+    "usage": "20% tint of magenta, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "charcoal-80",
+    "value": "#8d8d90",
+    "usage": "80% tint of charcoal, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "charcoal-50",
+    "value": "#b9b9ba",
+    "usage": "50% tint of charcoal, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "charcoal-20",
+    "value": "#e2e3e2",
+    "usage": "20% tint of charcoal, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "indigo-80",
+    "value": "#616d9b",
+    "usage": "80% tint of indigo, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "indigo-50",
+    "value": "#9ca4c1",
+    "usage": "50% tint of indigo, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "indigo-20",
+    "value": "#d7dae6",
+    "usage": "20% tint of indigo, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "cerulean-80",
+    "value": "#4e98cb",
+    "usage": "80% tint of cerulean, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "cerulean-50",
+    "value": "#90bfdf",
+    "usage": "50% tint of cerulean, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "cerulean-20",
+    "value": "#d2e4f0",
+    "usage": "20% tint of cerulean, for sequential fills and quiet backgrounds."
+   },
+   {
+    "name": "goodest-green",
+    "value": "#57aa4a",
+    "usage": "Data viz only: best end of a binned good scale."
+   },
+   {
+    "name": "good-3",
+    "value": "#7cbf4e",
+    "usage": "Data viz only: good scale step 3."
+   },
+   {
+    "name": "good-2",
+    "value": "#9cc456",
+    "usage": "Data viz only: good scale step 2."
+   },
+   {
+    "name": "good-1",
+    "value": "#bdd451",
+    "usage": "Data viz only: good scale step 1, next to chartreuse."
+   },
+   {
+    "name": "good-0",
+    "value": "#e0e883",
+    "usage": "Data viz only: divergent midpoint, good side."
+   },
+   {
+    "name": "bad-0",
+    "value": "#fb9e63",
+    "usage": "Data viz only: divergent midpoint, bad side."
+   },
+   {
+    "name": "bad-1",
+    "value": "#fb693c",
+    "usage": "Data viz only: bad scale step 1, next to Safety Orange."
+   },
+   {
+    "name": "bad-2",
+    "value": "#ed5236",
+    "usage": "Data viz only: bad scale step 2."
+   },
+   {
+    "name": "bad-3",
+    "value": "#e03a30",
+    "usage": "Data viz only: bad scale step 3."
+   },
+   {
+    "name": "baddest-red",
+    "value": "#d2232a",
+    "usage": "Data viz only: worst end of a binned bad scale."
+   }
+  ]
+ },
+ "type": {
+  "fonts": [
+   {
+    "family": "GascogneTS",
+    "file": "fonts/GascogneTS-Light.ttf",
+    "weight": "200"
+   }
+  ],
+  "families": {
+   "sans": "\"halyard-text\", \"Inter\", \"Helvetica Neue\", Arial, sans-serif",
+   "serif": "\"GascogneTS\", \"Source Serif 4\", Georgia, serif",
+   "chart": "\"Atlas Grotesk\", \"halyard-text\", \"Inter\", system-ui, sans-serif"
+  },
+  "groups": [
+   {
+    "name": "Display",
+    "family": "serif",
+    "styles": [
+     {
+      "name": "display",
+      "fontSize": "3.75rem",
+      "lineHeight": 1.05,
+      "fontWeight": 200
+     },
+     {
+      "name": "section-head",
+      "fontSize": "2.75rem",
+      "lineHeight": 1.05,
+      "fontWeight": 200
+     },
+     {
+      "name": "pullquote",
+      "fontSize": "1.875rem",
+      "lineHeight": 1.3,
+      "fontWeight": 200
+     },
+     {
+      "name": "big-numeral",
+      "fontSize": "1.7rem",
+      "lineHeight": 1.1,
+      "fontWeight": 200
+     }
+    ]
+   },
+   {
+    "name": "Headings",
+    "family": "sans",
+    "styles": [
+     {
+      "name": "h1",
+      "fontSize": "2.5rem",
+      "lineHeight": 1.15,
+      "fontWeight": 900
+     },
+     {
+      "name": "h2",
+      "fontSize": "1.75rem",
+      "lineHeight": 1.2,
+      "fontWeight": 900
+     },
+     {
+      "name": "h3",
+      "fontSize": "1.125rem",
+      "lineHeight": 1.25,
+      "fontWeight": 900
+     },
+     {
+      "name": "chart-title",
+      "fontSize": "1.25rem",
+      "lineHeight": 1.25,
+      "fontWeight": 900
+     }
+    ]
+   },
+   {
+    "name": "Text",
+    "family": "sans",
+    "styles": [
+     {
+      "name": "dek",
+      "fontSize": "1.125rem",
+      "lineHeight": 1.35,
+      "fontWeight": 200
+     },
+     {
+      "name": "body",
+      "fontSize": "1rem",
+      "lineHeight": 1.55,
+      "fontWeight": 300
+     },
+     {
+      "name": "chart-subtitle",
+      "fontSize": "0.95rem",
+      "lineHeight": 1.3,
+      "fontWeight": 200
+     },
+     {
+      "name": "kicker",
+      "fontSize": "0.75rem",
+      "lineHeight": 1.2,
+      "fontWeight": 700
+     },
+     {
+      "name": "byline",
+      "fontSize": "0.75rem",
+      "lineHeight": 1.2,
+      "fontWeight": 700
+     },
+     {
+      "name": "source-line",
+      "fontSize": "0.75rem",
+      "lineHeight": 1.4,
+      "fontWeight": 300
+     }
+    ]
+   }
+  ]
+ },
+ "spacing": {
+  "tokens": [
+   {
+    "name": "space-1",
+    "value": "0.25rem",
+    "usage": "Tight gaps inside labels."
+   },
+   {
+    "name": "space-2",
+    "value": "0.5rem",
+    "usage": "Gap between headline and dek."
+   },
+   {
+    "name": "space-3",
+    "value": "0.75rem",
+    "usage": "Table cell padding."
+   },
+   {
+    "name": "space-4",
+    "value": "1rem",
+    "usage": "Default gap."
+   },
+   {
+    "name": "space-5",
+    "value": "1.5rem",
+    "usage": "Card padding; space around hairlines."
+   },
+   {
+    "name": "space-6",
+    "value": "2rem",
+    "usage": "Space around pullquotes."
+   },
+   {
+    "name": "space-7",
+    "value": "3rem",
+    "usage": "Between page sections."
+   },
+   {
+    "name": "space-8",
+    "value": "4.5rem",
+    "usage": "Large section breaks."
+   },
+   {
+    "name": "space-9",
+    "value": "6rem",
+    "usage": "Hero spacing."
+   }
+  ]
+ },
+ "radius": {
+  "tokens": [
+   {
+    "name": "radius",
+    "value": "0px",
+    "usage": "Everything: cards, photos, inputs, buttons. Square corners are the brand."
+   },
+   {
+    "name": "radius-pill",
+    "value": "999px",
+    "usage": "Only the Donate-style pill button."
+   }
+  ]
+ }
+}

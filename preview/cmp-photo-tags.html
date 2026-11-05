@@ -1,0 +1,15 @@
+<!doctype html><meta charset="utf-8"><link rel=stylesheet href=_card.css>
+<style>
+.row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+.cell{position:relative}
+.cell img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+.tag{position:absolute;top:0;left:0;background:#fff;padding:6px 10px;font-family:var(--sans);font-weight:700;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#050507}
+.tag::after{content:" ↑";margin-left:.25em}
+</style>
+<div class=card style="padding:18px 22px">
+<div class=row>
+ <div class=cell><img src="https://images.unsplash.com/photo-1483653364400-eedcfb9f1f88?w=400&h=500&fit=crop"><span class=tag>Crime</span></div>
+ <div class=cell><img src="https://images.unsplash.com/photo-1556122071-e404cb6f31c0?w=400&h=500&fit=crop"><span class=tag>Subway</span></div>
+ <div class=cell><img src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?w=400&h=500&fit=crop"><span class=tag>Housing</span></div>
+</div>
+</div>

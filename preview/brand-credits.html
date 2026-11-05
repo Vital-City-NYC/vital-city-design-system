@@ -1,0 +1,29 @@
+<!doctype html><meta charset="utf-8"><link rel=stylesheet href=_card.css>
+<style>
+.row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.ph{position:relative;aspect-ratio:16/10;overflow:hidden;background:#ddd}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.cr{font-family:var(--sans);font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#707175}
+.cr.ov{position:absolute;right:6px;bottom:6px;background:rgba(255,255,255,.88);color:#050507;padding:3px 7px}
+.cap{font-family:var(--sans);font-weight:300;font-style:italic;font-size:12px;color:#050507;margin:8px 0 0;line-height:1.35}
+.cap b{font-style:normal;font-weight:700}
+.lbl{font-family:var(--sans);font-weight:700;font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:#707175;margin:0 0 8px}
+</style>
+<div class=card style="padding:18px 22px">
+<div class=row>
+ <div>
+  <div class=lbl>Overlay credit · hero / card images</div>
+  <div class=ph>
+   <img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?w=600&h=375&fit=crop">
+   <span class="cr ov">Photograph by Drew Angerer / Getty Images</span>
+  </div>
+ </div>
+ <div>
+  <div class=lbl>Caption + credit · inline</div>
+  <div class=ph>
+   <img src="https://images.unsplash.com/photo-1517504734587-2890819debab?w=600&h=375&fit=crop">
+  </div>
+  <p class=cap>A crowded uptown platform during evening rush, 2024. <b>Photograph by Alex Webb / Magnum Photos</b></p>
+ </div>
+</div>
+</div>

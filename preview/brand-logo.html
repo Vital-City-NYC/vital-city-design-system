@@ -1,0 +1,23 @@
+<!doctype html><meta charset="utf-8"><link rel=stylesheet href=_card.css>
+<style>
+.row{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.cell{display:flex;align-items:center;justify-content:center;padding:34px 24px;min-height:140px}
+.cell.white{background:#fff;border:1px solid #eee}
+.cell.black{background:#050507}
+.wm{height:42px;max-width:80%}
+.white .wm{filter:none}
+.black .wm{filter:brightness(0) invert(1)}
+.lbl{font-family:var(--sans);font-weight:700;font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:#707175;margin:14px 0 0;text-align:center}
+</style>
+<div class=card style="padding:16px 22px">
+<div class=row>
+ <div>
+  <div class="cell white"><img class=wm src="../assets/vc-logo-black.png" alt="Vital City"></div>
+  <div class=lbl>On white</div>
+ </div>
+ <div>
+  <div class="cell black"><img class=wm src="../assets/vc-logo-black.png" alt="Vital City"></div>
+  <div class=lbl>On black · filter: brightness(0) invert(1)</div>
+ </div>
+</div>
+</div>

@@ -1,0 +1,237 @@
+/*
+ * Vital City — base colors + type (flattened, editorial-semantic).
+ * Full token set in tokens/tokens.css. This is the at-a-glance CSS for designs.
+ */
+
+@import url("https://use.typekit.net/qqk2vto.css");
+
+@font-face {
+  font-family: "GascogneTS";
+  src: url("fonts/GascogneTS-Light.ttf") format("truetype");
+  font-weight: 200; /* Light cut declared at 200, matching fonts/fonts.css */
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* ---------- Color: primary ---------- */
+  --black:      #050507;
+  --white:      #ffffff;
+  --cloud:      #dddddd;   /* hairlines, gridlines, page-alt bg */
+  --chartreuse: #dde44c;   /* POP — primary bar fill, at most one single-word accent per page */
+  --orange:     #ff7c53;   /* ACCENT — Safety Orange — nav, CTAs, kickers, trend line */
+  --periwinkle: #9b9fbc;
+
+  /* Color: secondary */
+  --rose:     #cea9be;
+  --magenta:  #e7466d;     /* FOCAL — subject of analysis */
+  --charcoal: #707175;     /* muted text — deks, axis labels, metadata */
+  --indigo:   #394882;
+  --cerulean: #217ebe;     /* COMPARE — comparison group */
+
+  /* Color: data-viz tertiary */
+  --good-green: #57aa4a;
+  --bad-red:    #d2232a;
+
+  /* Foreground / background semantics */
+  --fg1: var(--black);         /* headlines, body */
+  --fg2: var(--charcoal);      /* deks, meta, captions */
+  --fg-invert: var(--white);
+  --bg1: var(--white);
+  --bg2: var(--cloud);
+  --bg-invert: var(--black);
+  --border: var(--cloud);
+  --rule: var(--black);
+
+  /* Editorial accents */
+  --accent: var(--orange);
+  --pop:    var(--chartreuse);
+  --focal:  var(--magenta);
+  --compare:var(--cerulean);
+
+  /* ---------- Type stacks ---------- */
+  --sans:  "halyard-text", "Inter", "Helvetica Neue", Arial, sans-serif;
+  --serif: "GascogneTS", "Source Serif 4", Georgia, "Times New Roman", serif;
+  --chart: "Atlas Grotesk", "halyard-text", "Inter", system-ui, sans-serif;
+
+  /* Weights (Halyard) */
+  --w-light: 200;
+  --w-book:  300;
+  --w-bold:  700;
+  --w-black: 900;
+
+  /* Tracking */
+  --track-kicker: 0.08em;
+  --track-caps:   0.04em;
+
+  /* Spacing scale (rem) */
+  --s1: .25rem;  --s2: .5rem;  --s3: .75rem;  --s4: 1rem;
+  --s5: 1.5rem;  --s6: 2rem;   --s7: 3rem;    --s8: 4.5rem; --s9: 6rem;
+
+  /* Radii — architectural default */
+  --radius: 0;
+  --radius-pill: 999px;
+
+  /* No drop shadows. The old chartreuse print shadow is retired. */
+}
+
+/* ---------- Semantic element styles ---------- */
+
+body {
+  font-family: var(--sans);
+  font-weight: var(--w-book);
+  color: var(--fg1);
+  background: var(--bg1);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Display — the big Gascogne serif title */
+.display {
+  font-family: var(--serif);
+  font-weight: var(--w-light);
+  font-size: clamp(2.25rem, 4vw, 3.75rem);
+  line-height: 1.05;
+  letter-spacing: -0.005em;
+  margin: 0;
+}
+
+/* H1 — Halyard Black, analytical / chart-style */
+h1, .h1 {
+  font-family: var(--sans);
+  font-weight: var(--w-black);
+  font-size: clamp(1.75rem, 2.6vw, 2.5rem);
+  line-height: 1.15;
+  margin: 0 0 var(--s4);
+  color: var(--fg1);
+}
+
+h2, .h2 {
+  font-family: var(--sans);
+  font-weight: var(--w-black);
+  font-size: clamp(1.375rem, 1.8vw, 1.75rem);
+  line-height: 1.2;
+  margin: 0 0 var(--s3);
+}
+
+h3, .h3 {
+  font-family: var(--sans);
+  font-weight: var(--w-black);
+  font-size: 1.125rem;
+  margin: 0 0 var(--s2);
+}
+
+/* Section head — serif, for "The Journal", "Data" */
+.section-head {
+  font-family: var(--serif);
+  font-weight: var(--w-light);
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  line-height: 1.05;
+  margin: 0;
+}
+
+/* Dek / subhead */
+.dek {
+  font-family: var(--sans);
+  font-weight: var(--w-light);
+  font-size: 1.125rem;
+  line-height: 1.35;
+  color: var(--fg1);
+  margin: 0 0 var(--s4);
+}
+.dek--serif {
+  font-family: var(--serif);
+  font-weight: var(--w-light);
+  font-style: italic;
+  font-size: 1.15rem;
+}
+
+/* Kicker — Halyard Bold caps tracked out, in ORANGE by default */
+.kicker {
+  font-family: var(--sans);
+  font-weight: var(--w-bold);
+  font-size: .75rem;
+  letter-spacing: var(--track-kicker);
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.kicker--muted { color: var(--charcoal); }
+.kicker--invert { color: var(--white); }
+
+/* Body */
+p, .body {
+  font-family: var(--sans);
+  font-weight: var(--w-book);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+/* Pullquote — Gascogne, NEVER in quotation marks */
+.pullquote {
+  font-family: var(--serif);
+  font-weight: var(--w-light);
+  font-size: clamp(1.375rem, 2.2vw, 1.875rem);
+  line-height: 1.3;
+  margin: var(--s6) 0;
+}
+
+/* Byline / meta — tracked bold caps, charcoal */
+.byline, .meta {
+  font-family: var(--sans);
+  font-weight: var(--w-bold);
+  font-size: .75rem;
+  letter-spacing: var(--track-caps);
+  text-transform: uppercase;
+  color: var(--charcoal);
+}
+
+/* Chart title */
+.chart-title {
+  font-family: var(--sans);
+  font-weight: var(--w-black);
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: var(--fg1);
+  max-width: 62ch;
+}
+.chart-subtitle {
+  font-family: var(--sans);
+  font-weight: var(--w-light);
+  font-size: .95rem;
+  color: var(--charcoal);
+}
+
+/* Chartreuse underline — editorial pop */
+.underline-pop {
+  /* Hairline accent, not a highlighter. At most one word per page. */
+  background-image: linear-gradient(var(--pop), var(--pop));
+  background-repeat: no-repeat;
+  background-position: 0 98%;
+  background-size: 100% 2px;
+  padding-bottom: 0.02em;
+}
+
+/* Link (inline text). 1px underline; thickens to chartreuse on hover. */
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+a:hover { text-decoration-color: var(--pop); text-decoration-thickness: 2px; }
+
+/* Hairline — the Vital City rule */
+hr.hairline {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: var(--s5) 0;
+}
+
+/* Dark panel inversion */
+.dark {
+  background: var(--bg-invert);
+  color: var(--fg-invert);
+  --fg1: var(--white);
+  --fg2: var(--periwinkle);
+  --border: #2a2a2e;
+}
