@@ -24,11 +24,11 @@ const MURDER_SERIES = [
 
 const DATASETS = [
   { id: 's1', tag: 'Crime', title: 'NYPD shooting-free days', image: 'https://images.unsplash.com/photo-1483653364400-eedcfb9f1f88?w=600&h=750&fit=crop' },
-  { id: 's2', tag: 'Subway', title: 'Weekday ridership recovery', image: 'https://images.unsplash.com/photo-1556122071-e404cb6f31c0?w=600&h=750&fit=crop' },
+  { id: 's2', tag: 'Subway', title: 'Weekday ridership recovery', image: 'https://images.unsplash.com/photo-1543059080-f9b1272213d5?w=600&h=750&fit=crop' },
   { id: 's3', tag: 'Housing', title: 'New building permits', image: 'https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?w=600&h=750&fit=crop' },
   { id: 's4', tag: 'Health', title: 'ER visits by cause', image: 'https://images.unsplash.com/photo-1527613426441-4da17471b66d?w=600&h=750&fit=crop' },
   { id: 's5', tag: 'Schools', title: 'Chronic absenteeism', image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=750&fit=crop' },
-  { id: 's6', tag: 'Budget', title: 'Where the money goes', image: 'https://images.unsplash.com/photo-1554224154-26032fced8bd?w=600&h=750&fit=crop' },
+  { id: 's6', tag: 'Budget', title: 'Where the money goes', image: 'https://images.unsplash.com/photo-1514565131-fce0801e5785?w=600&h=750&fit=crop' },
 ];
 
 function DashboardPage({ onOpen }) {

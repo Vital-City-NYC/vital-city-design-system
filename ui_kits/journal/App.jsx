@@ -41,14 +41,14 @@ const JOURNAL_ARTICLES = [
     title: 'Congestion pricing, one year in',
     dek: "What changed, what didn't, what it funded",
     byline: 'R. Okafor',
-    image: 'https://images.unsplash.com/photo-1556122071-e404cb6f31c0?w=900&h=600&fit=crop',
+    image: 'https://images.unsplash.com/photo-1543059080-f9b1272213d5?w=900&h=600&fit=crop',
     credit: 'Photograph by Bruce Davidson / Magnum Photos',
   },
 ];
 
 const DATA_ITEMS = [
   { id: 'd1', tag: 'Crime', image: 'https://images.unsplash.com/photo-1483653364400-eedcfb9f1f88?w=600&h=750&fit=crop' },
-  { id: 'd2', tag: 'Subway', image: 'https://images.unsplash.com/photo-1556122071-e404cb6f31c0?w=600&h=750&fit=crop' },
+  { id: 'd2', tag: 'Subway', image: 'https://images.unsplash.com/photo-1543059080-f9b1272213d5?w=600&h=750&fit=crop' },
   { id: 'd3', tag: 'Housing', image: 'https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?w=600&h=750&fit=crop' },
 ];
 
